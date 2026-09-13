@@ -964,7 +964,7 @@ const bloodrageBeam = extend(ContinuousLaserBulletType, {
 	incendSpread: 0,
 	incendAmount: 0,
 	ammoMultiplier: 1,
-	
+
 });
 
 const bloodrageLaser = extend(PowerTurret, "bloodrage-laser", {
@@ -988,7 +988,7 @@ bloodrageLaser.buildType = () => extend(PowerTurret.PowerTurretBuild, bloodrageL
         
 		Lightning.create(this.team, redLightningColor, 50, this.x, this.y, bullet.rotation() + 180, 100);
         Sounds.shootArc.at(this.tile, Mathf.random(0.9, 1.1));
-
+        return true;
     }
 
 });
