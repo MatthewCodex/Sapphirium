@@ -4,14 +4,21 @@ description: Fires a concentrated laser beam that melts enemy armor.
 size: 3
 health: 2000
 range: 200
-shootDuration: 240
-reload: 240
+shootDuration: 230
+reload: 90
+shake: 2
+
 coolantMultiplier: 1.5
 shootSound: shootMeltdown
+loopSound: beamMeltdown
+loopSoundVolume: 2
 
-// The status effect applied by the turret itself while active (optional)
-status: melting
-statusDuration: 300
+
+
+drawer: {
+type: DrawTurret
+basePrefix: "crimson-agate-"
+}
 
 // Defines what the turret consumes to fire
 consumes: {

@@ -968,6 +968,24 @@ shootType: bloodrageBeam,
 
 });
 
+const redLightningColor = Color.valueOf("ff3333");
+
+
+
+discharge.buildType = () => extend(PowerTurret.PowerTurretBuild, bloodrageLaser, {
+	
+    handleBulletHit(bullet){
+        // Always run the base wall logic so the block registers the bullet damage correctly
+        this.super$handleBulletHit(bullet);
+        
+        // 1. Double check that the bullet is from an enemy team
+        
+		Lightning.create(this.team, redLightningColor, 50, this.x, this.y, bullet.rotation() + 180, 100);
+        Sounds.shootArc.at(this.tile, Mathf.random(0.9, 1.1));
+
+    }
+
+});
 
 
 const bloodySpawn = extend(BulletType, 0, 0, {
