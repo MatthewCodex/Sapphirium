@@ -986,7 +986,7 @@ bloodrageLaser.buildType = () => extend(PowerTurret.PowerTurretBuild, bloodrageL
         
         // 1. Double check that the bullet is from an enemy team
         
-		Lightning.create(this.team, redLightningColor, 50, this.x, this.y, bullet.rotation() + 180, 100);
+		Lightning.create(this.team, redLightningColor, 50, this.x, this.y, bullet.rotation() + 180, 50);
         Sounds.shootArc.at(this.tile, Mathf.random(0.9, 1.1));
         return true;
     }
