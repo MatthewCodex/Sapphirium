@@ -1,5 +1,5 @@
 type: GenericCrafter
-name: T1 Ruby Drill
+
 description: Produces rubies.
 size: 1
 hasPower: false
