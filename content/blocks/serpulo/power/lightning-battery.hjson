@@ -1,0 +1,8 @@
+
+
+health: 575
+consumes: {
+    powerBuffered: 180000
+}
+
+size: 2
