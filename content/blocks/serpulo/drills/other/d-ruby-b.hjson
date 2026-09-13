@@ -16,4 +16,4 @@ requirements: [
 category: production
 research: d-ruby-a
 
-shownPlanets: [serpulo , erekir , rospuleball]
+shownPlanets: [serpulo , erekir]
