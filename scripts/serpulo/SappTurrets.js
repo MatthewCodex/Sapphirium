@@ -959,6 +959,12 @@ const bloodrageBeam = extend(ContinuousLaserBulletType, {
 	damage: 200,
 	lightColor: Color.valueOf("ff6e6e"),
 	status: statuses.activeBloodrage,
+	timescaleDamage: true,
+	incendChance: 0,
+	incendSpread: 0,
+	incendAmount: 0,
+	ammoMultiplier: 1,
+	
 });
 
 const bloodrageLaser = extend(PowerTurret, "bloodrage-laser", {
@@ -972,8 +978,8 @@ const redLightningColor = Color.valueOf("ff3333");
 
 
 
-discharge.buildType = () => extend(PowerTurret.PowerTurretBuild, bloodrageLaser, {
-	
+bloodrageLaser.buildType = () => extend(PowerTurret.PowerTurretBuild, bloodrageLaser, {
+
     handleBulletHit(bullet){
         // Always run the base wall logic so the block registers the bullet damage correctly
         this.super$handleBulletHit(bullet);
