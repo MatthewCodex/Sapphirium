@@ -1,0 +1,36 @@
+
+
+description: Fires a concentrated laser beam that melts enemy armor.
+size: 3
+health: 2000
+range: 200
+shootDuration: 240
+reload: 240
+coolantMultiplier: 1.5
+shootSound: shootMeltdown
+
+// The status effect applied by the turret itself while active (optional)
+status: melting
+statusDuration: 300
+
+// Defines what the turret consumes to fire
+consumes: {
+  power: 10
+  liquid: {
+    liquid: water
+    amount: 0.3
+    booster: true
+    optional: true
+  }
+}
+
+
+
+requirements: [
+  copper/150
+  lead/120
+  silicon/80
+]
+
+category: turret
+research: duo

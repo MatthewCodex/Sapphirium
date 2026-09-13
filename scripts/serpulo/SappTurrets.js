@@ -951,6 +951,25 @@ const bloodyLaser = extend(LaserBulletType, {
 	status: statuses.passiveBloodrage,
 });
 
+const bloodrageBeam = extend(ContinuousLaserBulletType, {
+	width: 25,
+	length: 400,
+	sideWidth: 0,
+	colors: [Color.valueOf("ff6e6e70"), Color.valueOf("ff6e6e"), Color.white], 
+	damage: 200,
+	lightColor: Color.valueOf("ff6e6e"),
+	status: statuses.activeBloodrage,
+});
+
+const bloodrageLaser = extend(PowerTurret, "bloodrage-laser", {
+playerControllable: false,
+logicControllable: true,
+shootType: bloodrageBeam,
+
+});
+
+
+
 const bloodySpawn = extend(BulletType, 0, 0, {
 	hitEffect: Fx.none,
 	despawnEffect: Fx.none,
