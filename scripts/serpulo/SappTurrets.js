@@ -980,9 +980,9 @@ const redLightningColor = Color.valueOf("ff3333");
 
 bloodrageLaser.buildType = () => extend(PowerTurret.PowerTurretBuild, bloodrageLaser, {
 
-    handleBulletHit(bullet){
+    collision(bullet){
         // Always run the base wall logic so the block registers the bullet damage correctly
-        this.super$handleBulletHit(bullet);
+        this.super$collision(bullet);
         
         // 1. Double check that the bullet is from an enemy team
         
