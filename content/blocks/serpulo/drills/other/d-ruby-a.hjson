@@ -1,0 +1,20 @@
+type: GenericCrafter
+name: T1 Ruby Drill
+description: Produces rubies.
+size: 1
+hasPower: false
+hasItems: true
+itemCapacity: 20
+craftTime: 60
+
+outputItems: [
+  ruby/1
+]
+requirements: [
+  copper/100
+  
+]
+category: production
+research: ruby-drill
+
+shownPlanets: [serpulo , erekir , rospuleball]

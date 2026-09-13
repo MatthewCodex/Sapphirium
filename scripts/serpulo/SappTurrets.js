@@ -877,6 +877,17 @@ setStats(){
 }
 });
 
+const bloodrageTurret = extend(PowerTurret, "bloodrage-turret", {
+playerControllable: false,
+logicControllable: true,
+shootType: emptyBul,
+setStats(){
+	this.super$setStats();
+	this.stats.remove(Stat.ammo);
+	this.stats.add(Stat.ammo, StatValues.abilities(sparrowAbilityStat));
+}
+});
+
 const hawk = extend(PowerTurret, "hawk", {});
 
 const scrStar = extend(ItemTurret, "scarlet-star", {});

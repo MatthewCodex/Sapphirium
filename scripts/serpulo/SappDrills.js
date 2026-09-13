@@ -30,3 +30,9 @@ const thoriumMine = extend(AttributeCrafter, "thorium-mine", {});
 const rubyDrill = extend(GenericCrafter, "ruby-drill", {
     envDisabled: Env.scorching
 });
+
+const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {});
+const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {});
+const D_RUBY_C = extend(GenericCrafter, "d-ruby-c", {});
+const D_RUBY_D = extend(GenericCrafter, "d-ruby-d", {});
+const D_RUBY_E = extend(GenericCrafter, "d-ruby-e", {});

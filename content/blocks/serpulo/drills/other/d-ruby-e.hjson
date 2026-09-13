@@ -1,0 +1,23 @@
+type: GenericCrafter
+name: T5 Ruby Drill
+description: Produces rubies.
+size: 5
+hasPower: true
+hasItems: true
+itemCapacity: 20
+craftTime: 10
+consumes: {
+  power: 3.0
+}
+outputItems: [
+  ruby/1
+]
+requirements: [
+  copper/300
+  
+]
+category: production
+research: d-ruby-d
+conductivePower: true
+
+shownPlanets: [serpulo , erekir , rospuleball]
