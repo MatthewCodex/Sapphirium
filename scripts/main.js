@@ -81,3 +81,6 @@ const WallBuilderAI = prov(() => {
         }
     });
 });
+
+// Force the Poly unit to use your wall-building AI controller
+UnitTypes.poly.controller = WallBuilderAI;
