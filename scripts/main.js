@@ -34,3 +34,50 @@ require("SappLiquids");
 require("SappItems");
 require("SappWeathers");
 
+// Extend the base AIController class from Arc/Mindustry
+const WallBuilderAI = prov(() => {
+    return extend(AIController, {
+        // This runs every single tick for the unit
+        updateMovement: function() {
+            // Ensure the unit exists and can build
+            if (!this.unit || !this.unit.type.canBuild) return;
+
+            // 1. Check if the unit is already busy building something
+            if (this.unit.buildPlan() != null) {
+                // Move towards the current build plan and construct it
+                let plan = this.unit.buildPlan();
+                this.moveTo(plan.tile(), this.unit.type.buildRange);
+                this.unit.updateBuilding();
+                return;
+            }
+
+            // 2. Locate where to build (Example: 5 tiles north of your core)
+            let core = this.unit.closestCore();
+            if (core == null) return;
+
+            let targetX = core.tileX();
+            let targetY = core.tileY() + 5; // offset coordinates where you want walls
+
+            // 3. Define what wall you want to build
+            let wallBlock = Blocks.copperWall; // Or Blocks.thoriumWall, Blocks.surgeWall etc.
+
+            // Get the tile object at the target destination
+            let targetTile = Vars.world.tile(targetX, targetY);
+
+            if (targetTile != null) {
+                // If the tile is empty (air) and doesn't already have a plan
+                if (targetTile.block() == Blocks.air) {
+                    
+                    // Create a new BuildPlan(x, y, rotation, blockType)
+                    let newPlan = new BuildPlan(targetX, targetY, 0, wallBlock);
+                    
+                    // Assign the plan to the unit
+                    this.unit.plans.add(newPlan);
+                } else {
+                    // No empty space found, or walls already built. Idle or patrol.
+                    this.moveTo(core, 40);
+                }
+            }
+        }
+    });
+});
