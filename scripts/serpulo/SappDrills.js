@@ -1,3 +1,5 @@
+require("SappItems")
+
 const smallDrill = extend(Drill, "smalldrill", {
 	setStats() {
 		this.super$setStats();
