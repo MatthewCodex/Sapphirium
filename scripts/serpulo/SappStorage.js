@@ -14,7 +14,7 @@ const coreCage = extend(CoreBlock, "core-cage", {
     hasPower: true,
     outputsPower: true,
     consumesPower: false,
-    
+    size: 6,
 	//for stats
     setStats() {
         this.super$setStats();
