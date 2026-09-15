@@ -1,4 +1,4 @@
-require("SappItems");
+const _SappItems = require("SappItems");
 
 const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {envDisabled: Env.scorching});
 const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {envDisabled: Env.scorching});
@@ -13,19 +13,19 @@ D_RUBY_D.size = 4;
 D_RUBY_E.size = 5;
 
 D_RUBY_A.outputItem = [
-	new ItemStack(ruby, 1)
+	new ItemStack(_SappItems.ruby, 1)
 ];
 D_RUBY_B.outputItem = [
-	new ItemStack(ruby, 1)
+	new ItemStack(_SappItems.ruby, 1)
 ];
 D_RUBY_C.outputItem = [
-	new ItemStack(ruby, 2)
+	new ItemStack(_SappItems.ruby, 2)
 ];
 D_RUBY_D.outputItem = [
-	new ItemStack(ruby, 2)
+	new ItemStack(_SappItems.ruby, 2)
 ];
 D_RUBY_E.outputItem = [
-	new ItemStack(ruby, 3)
+	new ItemStack(_SappItems.ruby, 3)
 ];
 
 D_RUBY_A.requirements = ItemStack.with(
@@ -36,26 +36,26 @@ D_RUBY_A.requirements = ItemStack.with(
 D_RUBY_B.requirements = ItemStack.with(
     Items.copper, 25,
     Items.lead, 25,
-	ruby, 25
+	_SappItems.ruby, 25
 );
 
 D_RUBY_C.requirements = ItemStack.with(
     Items.copper, 50,
     Items.lead, 50,
-	ruby, 50
+	_SappItems.ruby, 50
 );
 
 D_RUBY_D.requirements = ItemStack.with(
     Items.copper, 100,
     Items.lead, 100,
-	ruby, 100
+	_SappItems.ruby, 100
 );
 
 D_RUBY_E.requirements = ItemStack.with(
     Items.copper, 250,
     Items.lead, 250,
 	Items.graphite, 250,
-	ruby, 250
+	_SappItems.ruby, 250
 );
 
 D_RUBY_A.hasPower = false
