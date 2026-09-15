@@ -1,5 +1,5 @@
 const _SappItems = require("SappItems");
-const abc = Vars.content.getByName(ContentType.item, "sapphirium-ruby");
+const ruby = Vars.content.getByName(ContentType.item, "sapphirium-ruby");
 
 const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {envDisabled: Env.scorching});
 const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {envDisabled: Env.scorching});
@@ -13,51 +13,17 @@ D_RUBY_C.size = 3;
 D_RUBY_D.size = 4;
 D_RUBY_E.size = 5;
 
-D_RUBY_A.outputItems = [
-	new ItemStack(abc, 1)
-];
-D_RUBY_B.outputItems = [
-	new ItemStack(abc, 1)
-];
-D_RUBY_C.outputItems = [
-	new ItemStack(abc, 2)
-];
-D_RUBY_D.outputItems = [
-	new ItemStack(abc, 2)
-];
-D_RUBY_E.outputItems = [
-	new ItemStack(abc, 3)
-];
+D_RUBY_A.outputItems = [new ItemStack(ruby, 1)];
+D_RUBY_B.outputItems = [new ItemStack(ruby, 1)];
+D_RUBY_C.outputItems = [new ItemStack(ruby, 2)];
+D_RUBY_D.outputItems = [new ItemStack(ruby, 2)];
+D_RUBY_E.outputItems = [new ItemStack(ruby, 3)];
 
-D_RUBY_A.requirements = ItemStack.with(
-    Items.copper, 10,
-    Items.lead, 10
-);
-
-D_RUBY_B.requirements = ItemStack.with(
-    Items.copper, 25,
-    Items.lead, 25,
-	abc, 25
-);
-
-D_RUBY_C.requirements = ItemStack.with(
-    Items.copper, 50,
-    Items.lead, 50,
-	abc, 50
-);
-
-D_RUBY_D.requirements = ItemStack.with(
-    Items.copper, 100,
-    Items.lead, 100,
-	abc, 100
-);
-
-D_RUBY_E.requirements = ItemStack.with(
-    Items.copper, 250,
-    Items.lead, 250,
-	Items.graphite, 250,
-	abc, 250
-);
+D_RUBY_A.requirements = ItemStack.with(Items.copper, 10,  Items.lead, 10);
+D_RUBY_B.requirements = ItemStack.with(Items.copper, 25,  Items.lead, 25,  ruby, 25);
+D_RUBY_C.requirements = ItemStack.with(Items.copper, 50,  Items.lead, 50,  ruby, 50);
+D_RUBY_D.requirements = ItemStack.with(Items.copper, 100,  Items.lead, 100,  ruby, 100);
+D_RUBY_E.requirements = ItemStack.with(Items.copper, 250,  Items.lead, 250,  Items.graphite, 250,  ruby, 250);
 
 D_RUBY_A.hasPower = false
 D_RUBY_B.hasPower = false
@@ -87,8 +53,8 @@ D_RUBY_C.research = "d-ruby-b";
 D_RUBY_D.research = "d-ruby-c";
 D_RUBY_E.research = "d-ruby-d";
 
-D_RUBY_A.category = "production";
-D_RUBY_B.category = "production";
-D_RUBY_C.category = "production";
-D_RUBY_D.category = "production";
-D_RUBY_E.category = "production";
+D_RUBY_A.category = Category.production;
+D_RUBY_B.category = Category.production;
+D_RUBY_C.category = Category.production;
+D_RUBY_D.category = Category.production;
+D_RUBY_E.category = Category.production;
