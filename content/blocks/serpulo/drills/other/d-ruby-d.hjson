@@ -1,22 +1,4 @@
 
 description: Produces rubies.
-size: 4
-hasPower: true
 hasItems: true
-itemCapacity: 20
-craftTime: 20
-consumes: {
-  power: 2.0
-}
-outputItems: [
-  ruby/1
-]
-requirements: [
-  copper/250
-  
-]
-category: production
-research: d-ruby-c
-conductivePower: true
-
 shownPlanets: [serpulo , erekir]
