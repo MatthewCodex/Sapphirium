@@ -14,7 +14,7 @@ D_RUBY_D.size = 4;
 D_RUBY_E.size = 5;
 
 D_RUBY_A.outputItem = [
-	new Seq.with(abc, 1)
+	new ItemStack(abc, 1)
 ];
 D_RUBY_B.outputItem = [
 	new Seq.with(_SappItems.ruby, 1)
