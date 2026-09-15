@@ -1,4 +1,5 @@
 const _SappItems = require("SappItems");
+const abc = Vars.content.getByName(ContentType.item, "sapphirium-ruby");
 
 const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {envDisabled: Env.scorching});
 const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {envDisabled: Env.scorching});
@@ -13,7 +14,7 @@ D_RUBY_D.size = 4;
 D_RUBY_E.size = 5;
 
 D_RUBY_A.outputItem = [
-	new Seq.with(_SappItems.ruby, 1)
+	new Seq.with(abc, 1)
 ];
 D_RUBY_B.outputItem = [
 	new Seq.with(_SappItems.ruby, 1)
