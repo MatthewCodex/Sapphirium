@@ -16,17 +16,17 @@ D_RUBY_E.size = 5;
 D_RUBY_A.outputItems = [
 	new ItemStack(abc, 1)
 ];
-D_RUBY_B.outputItem = [
-	new Seq.with(_SappItems.ruby, 1)
+D_RUBY_B.outputItems = [
+	new ItemStack(abc, 1)
 ];
-D_RUBY_C.outputItem = [
-	new Seq.with(_SappItems.ruby, 2)
+D_RUBY_C.outputItems = [
+	new ItemStack(abc, 2)
 ];
-D_RUBY_D.outputItem = [
-	new Seq.with(_SappItems.ruby, 2)
+D_RUBY_D.outputItems = [
+	new ItemStack(abc, 2)
 ];
-D_RUBY_E.outputItem = [
-	new Seq.with(_SappItems.ruby, 3)
+D_RUBY_E.outputItems = [
+	new ItemStack(abc, 3)
 ];
 
 D_RUBY_A.requirements = ItemStack.with(
