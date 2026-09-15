@@ -47,12 +47,6 @@ D_RUBY_C.craftTime = 30;
 D_RUBY_D.craftTime = 20;
 D_RUBY_E.craftTime = 10;
 
-D_RUBY_A.research = "ruby-drill";
-D_RUBY_B.research = "d-ruby-a";
-D_RUBY_C.research = "d-ruby-b";
-D_RUBY_D.research = "d-ruby-c";
-D_RUBY_E.research = "d-ruby-d";
-
 D_RUBY_A.category = Category.production;
 D_RUBY_B.category = Category.production;
 D_RUBY_C.category = Category.production;
