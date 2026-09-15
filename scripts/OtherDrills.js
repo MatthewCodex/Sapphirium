@@ -13,7 +13,7 @@ D_RUBY_C.size = 3;
 D_RUBY_D.size = 4;
 D_RUBY_E.size = 5;
 
-D_RUBY_A.outputItem = [
+D_RUBY_A.outputItems = [
 	new ItemStack(abc, 1)
 ];
 D_RUBY_B.outputItem = [
