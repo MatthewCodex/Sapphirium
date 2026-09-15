@@ -14,7 +14,6 @@ const coreCage = extend(CoreBlock, "core-cage", {
     hasPower: true,
     outputsPower: true,
     consumesPower: false,
-    size: 6,
 	//for stats
     setStats() {
         this.super$setStats();
@@ -173,7 +172,6 @@ const coreOcean = extend(CoreBlock, "core-ocean", {
 
 const scarletGem = extend(CoreBlock, "scarlet-gem", {
 	health: 3400,
-	size: 4,
 	itemCapacity: 2000,
 	unitCapModifier: 2,
 	thrusterLength: 34/4,
