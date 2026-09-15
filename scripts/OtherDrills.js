@@ -13,19 +13,19 @@ D_RUBY_D.size = 4;
 D_RUBY_E.size = 5;
 
 D_RUBY_A.outputItem = [
-	new ItemStack.with(_SappItems.ruby, 1)
+	new Seq.with(_SappItems.ruby, 1)
 ];
 D_RUBY_B.outputItem = [
-	new ItemStack.with(_SappItems.ruby, 1)
+	new Seq.with(_SappItems.ruby, 1)
 ];
 D_RUBY_C.outputItem = [
-	new ItemStack.with(_SappItems.ruby, 2)
+	new Seq.with(_SappItems.ruby, 2)
 ];
 D_RUBY_D.outputItem = [
-	new ItemStack.with(_SappItems.ruby, 2)
+	new Seq.with(_SappItems.ruby, 2)
 ];
 D_RUBY_E.outputItem = [
-	new ItemStack.with(_SappItems.ruby, 3)
+	new Seq.with(_SappItems.ruby, 3)
 ];
 
 D_RUBY_A.requirements = ItemStack.with(
