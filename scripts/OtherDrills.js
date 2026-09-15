@@ -37,26 +37,26 @@ D_RUBY_A.requirements = ItemStack.with(
 D_RUBY_B.requirements = ItemStack.with(
     Items.copper, 25,
     Items.lead, 25,
-	_SappItems.ruby, 25
+	abc, 25
 );
 
 D_RUBY_C.requirements = ItemStack.with(
     Items.copper, 50,
     Items.lead, 50,
-	_SappItems.ruby, 50
+	abc, 50
 );
 
 D_RUBY_D.requirements = ItemStack.with(
     Items.copper, 100,
     Items.lead, 100,
-	_SappItems.ruby, 100
+	abc, 100
 );
 
 D_RUBY_E.requirements = ItemStack.with(
     Items.copper, 250,
     Items.lead, 250,
 	Items.graphite, 250,
-	_SappItems.ruby, 250
+	abc, 250
 );
 
 D_RUBY_A.hasPower = false
