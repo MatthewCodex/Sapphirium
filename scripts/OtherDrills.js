@@ -1,4 +1,4 @@
-require("SappItems")
+require("SappItems");
 
 const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {envDisabled: Env.scorching});
 const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {envDisabled: Env.scorching});
