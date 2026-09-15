@@ -1,3 +1,4 @@
+type: ParticleWeather
 noiseLayers: 3.5
 noiseLayerSclM: 1
 noiseLayerAlphaM: 0.9

@@ -1,3 +1,4 @@
+type: RainWeather
 liquid: ledonite-liquid
 color: 6fdedc
 sound: rain
