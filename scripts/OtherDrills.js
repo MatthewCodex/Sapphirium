@@ -2,17 +2,23 @@ const _SappItems = require("SappItems");
 const ruby = Vars.content.getByName(ContentType.item, "sapphirium-ruby");
 const emerald = Vars.content.getByName(ContentType.item, "sapphirium-emerald");
 
-const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {envDisabled: Env.scorching});
-const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {envDisabled: Env.scorching});
-const D_RUBY_C = extend(GenericCrafter, "d-ruby-c", {envDisabled: Env.scorching});
-const D_RUBY_D = extend(GenericCrafter, "d-ruby-d", {envDisabled: Env.scorching});
-const D_RUBY_E = extend(GenericCrafter, "d-ruby-e", {envDisabled: Env.scorching});
+const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {});
+const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {});
+const D_RUBY_C = extend(GenericCrafter, "d-ruby-c", {});
+const D_RUBY_D = extend(GenericCrafter, "d-ruby-d", {});
+const D_RUBY_E = extend(GenericCrafter, "d-ruby-e", {});
 
 D_RUBY_A.size = 1;
 D_RUBY_B.size = 2;
 D_RUBY_C.size = 3;
 D_RUBY_D.size = 4;
 D_RUBY_E.size = 5;
+
+D_RUBY_A.localizedName = "T1 Ruby Drill";
+D_RUBY_B.localizedName = "T2 Ruby Drill";
+D_RUBY_C.localizedName = "T3 Ruby Drill";
+D_RUBY_D.localizedName = "T4 Ruby Drill";
+D_RUBY_E.localizedName = "T5 Ruby Drill";
 
 D_RUBY_A.outputItems = [new ItemStack(ruby, 1)];
 D_RUBY_B.outputItems = [new ItemStack(ruby, 1)];
