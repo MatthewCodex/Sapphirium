@@ -1,0 +1,4 @@
+research: d-emerald-d
+description: Produces emeralds.
+hasItems: true
+shownPlanets: [serpulo , erekir]
