@@ -54,11 +54,11 @@ D_RUBY_C.craftTime = 30;
 D_RUBY_D.craftTime = 20;
 D_RUBY_E.craftTime = 10;
 
-D_RUBY_A.category = Category.production;
-D_RUBY_B.category = Category.production;
-D_RUBY_C.category = Category.production;
-D_RUBY_D.category = Category.production;
-D_RUBY_E.category = Category.production;
+//D_RUBY_A.category = Category.production;
+//D_RUBY_B.category = Category.production;
+//D_RUBY_C.category = Category.production;
+//D_RUBY_D.category = Category.production;
+//D_RUBY_E.category = Category.production;
 
 
 
