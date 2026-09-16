@@ -62,17 +62,23 @@ D_RUBY_E.category = Category.production;
 
 
 
-const D_EMERALD_A = extend(GenericCrafter, "d-emerald-a", {envDisabled: Env.scorching});
-const D_EMERALD_B = extend(GenericCrafter, "d-emerald-b", {envDisabled: Env.scorching});
-const D_EMERALD_C = extend(GenericCrafter, "d-emerald-c", {envDisabled: Env.scorching});
-const D_EMERALD_D = extend(GenericCrafter, "d-emerald-d", {envDisabled: Env.scorching});
-const D_EMERALD_E = extend(GenericCrafter, "d-emerald-e", {envDisabled: Env.scorching});
+const D_EMERALD_A = extend(GenericCrafter, "d-emerald-a", {});
+const D_EMERALD_B = extend(GenericCrafter, "d-emerald-b", {});
+const D_EMERALD_C = extend(GenericCrafter, "d-emerald-c", {});
+const D_EMERALD_D = extend(GenericCrafter, "d-emerald-d", {});
+const D_EMERALD_E = extend(GenericCrafter, "d-emerald-e", {});
 
 D_EMERALD_A.size = 1;
 D_EMERALD_B.size = 2;
 D_EMERALD_C.size = 3;
 D_EMERALD_D.size = 4;
 D_EMERALD_E.size = 5;
+
+D_EMERALD_A.localizedName = "T1 Emerald Drill";
+D_EMERALD_B.localizedName = "T2 Emerald Drill";
+D_EMERALD_C.localizedName = "T3 Emerald Drill";
+D_EMERALD_D.localizedName = "T4 Emerald Drill";
+D_EMERALD_E.localizedName = "T5 Emerald Drill";
 
 D_EMERALD_A.outputItems = [new ItemStack(emerald, 1)];
 D_EMERALD_B.outputItems = [new ItemStack(emerald, 1)];
