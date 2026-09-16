@@ -3,11 +3,11 @@ const ruby = Vars.content.getByName(ContentType.item, "sapphirium-ruby");
 const emerald = Vars.content.getByName(ContentType.item, "sapphirium-emerald");
 const globium = Vars.content.getByName(ContentType.item, "sapphirium-globium");
 
-const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {});
-const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {});
-const D_RUBY_C = extend(GenericCrafter, "d-ruby-c", {});
-const D_RUBY_D = extend(GenericCrafter, "d-ruby-d", {});
-const D_RUBY_E = extend(GenericCrafter, "d-ruby-e", {});
+const D_RUBY_A = extend(GenericCrafter, "d-ruby-a", {buildVisibility: BuildVisibility.shown});
+const D_RUBY_B = extend(GenericCrafter, "d-ruby-b", {buildVisibility: BuildVisibility.shown});
+const D_RUBY_C = extend(GenericCrafter, "d-ruby-c", {buildVisibility: BuildVisibility.shown});
+const D_RUBY_D = extend(GenericCrafter, "d-ruby-d", {buildVisibility: BuildVisibility.shown});
+const D_RUBY_E = extend(GenericCrafter, "d-ruby-e", {buildVisibility: BuildVisibility.shown});
 
 D_RUBY_A.size = 1;
 D_RUBY_B.size = 2;
@@ -63,11 +63,11 @@ D_RUBY_E.craftTime = 10;
 
 
 
-const D_EMERALD_A = extend(GenericCrafter, "d-emerald-a", {});
-const D_EMERALD_B = extend(GenericCrafter, "d-emerald-b", {});
-const D_EMERALD_C = extend(GenericCrafter, "d-emerald-c", {});
-const D_EMERALD_D = extend(GenericCrafter, "d-emerald-d", {});
-const D_EMERALD_E = extend(GenericCrafter, "d-emerald-e", {});
+const D_EMERALD_A = extend(GenericCrafter, "d-emerald-a", {buildVisibility: BuildVisibility.shown});
+const D_EMERALD_B = extend(GenericCrafter, "d-emerald-b", {buildVisibility: BuildVisibility.shown});
+const D_EMERALD_C = extend(GenericCrafter, "d-emerald-c", {buildVisibility: BuildVisibility.shown});
+const D_EMERALD_D = extend(GenericCrafter, "d-emerald-d", {buildVisibility: BuildVisibility.shown});
+const D_EMERALD_E = extend(GenericCrafter, "d-emerald-e", {buildVisibility: BuildVisibility.shown});
 
 D_EMERALD_A.size = 1;
 D_EMERALD_B.size = 2;
@@ -123,11 +123,11 @@ D_EMERALD_E.craftTime = 10;
 
 
 
-const D_GLOBIUM_A = extend(GenericCrafter, "d-globium-a", {});
-const D_GLOBIUM_B = extend(GenericCrafter, "d-globium-b", {});
-const D_GLOBIUM_C = extend(GenericCrafter, "d-globium-c", {});
-const D_GLOBIUM_D = extend(GenericCrafter, "d-globium-d", {});
-const D_GLOBIUM_E = extend(GenericCrafter, "d-globium-e", {});
+const D_GLOBIUM_A = extend(GenericCrafter, "d-globium-a", {buildVisibility: BuildVisibility.shown});
+const D_GLOBIUM_B = extend(GenericCrafter, "d-globium-b", {buildVisibility: BuildVisibility.shown});
+const D_GLOBIUM_C = extend(GenericCrafter, "d-globium-c", {buildVisibility: BuildVisibility.shown});
+const D_GLOBIUM_D = extend(GenericCrafter, "d-globium-d", {buildVisibility: BuildVisibility.shown});
+const D_GLOBIUM_E = extend(GenericCrafter, "d-globium-e", {buildVisibility: BuildVisibility.shown});
 
 D_GLOBIUM_A.size = 1;
 D_GLOBIUM_B.size = 2;
