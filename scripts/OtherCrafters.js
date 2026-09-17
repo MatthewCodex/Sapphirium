@@ -42,7 +42,7 @@ BBM_C.outputItems = [new ItemStack(Items.blastCompound, 18)];
 BBM_D.outputItems = [new ItemStack(Items.blastCompound, 18)];
 BBM_E.outputItems = [new ItemStack(Items.blastCompound, 18)];
 
-BBM_A.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
+BBM_A.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 12)));
 BBM_B.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
 BBM_C.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
 BBM_D.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
