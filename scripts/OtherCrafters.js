@@ -22,6 +22,10 @@ const creostone = Vars.content.getByName(ContentType.item, "sapphirium-creostone
 const ruby = Vars.content.getByName(ContentType.item, "sapphirium-ruby");
 const topaz = Vars.content.getByName(ContentType.item, "sapphirium-topaz");
 
+const creotite = Vars.content.getByName(ContentType.liquid, "sapphirium-creotite");
+const ledonite = Vars.content.getByName(ContentType.liquid, "sapphirium-ledonite-liquid");
+const surge_mass = Vars.content.getByName(ContentType.liquid, "sapphirium-surge-mass");
+
 const BBM_A = extend(GenericCrafter, "bbm-a", {buildVisibility: BuildVisibility.shown});
 const BBM_B = extend(GenericCrafter, "bbm-b", {buildVisibility: BuildVisibility.shown});
 const BBM_C = extend(GenericCrafter, "bbm-c", {buildVisibility: BuildVisibility.shown});
@@ -54,23 +58,36 @@ BBM_C.requirements = ItemStack.with(creostone, 50,  Items.thorium, 50, Items.sil
 BBM_D.requirements = ItemStack.with(creostone, 75,  Items.thorium, 75, Items.silicon, 75, Items.plastanium, 75);
 BBM_E.requirements = ItemStack.with(creostone, 100,  Items.thorium, 100, Items.silicon, 100, Items.plastanium, 100);
 
-BBM_A.consumePower(60);
-BBM_B.consumePower(70);
-BBM_C.consumePower(80);
-BBM_D.consumePower(90);
-BBM_E.consumePower(100);
-
-BBM_A.itemCapacity = 20;
-BBM_B.itemCapacity = 40;
-BBM_C.itemCapacity = 60;
-BBM_D.itemCapacity = 80;
-BBM_E.itemCapacity = 100;
-
-BBM_A.craftTime = 200;
-BBM_B.craftTime = 180;
-BBM_C.craftTime = 160;
-BBM_D.craftTime = 140;
-BBM_E.craftTime = 120;
+BBM_A.consumePower(60);  BBM_A.itemCapacity = 20;  BBM_A.craftTime = 200;
+BBM_B.consumePower(70);  BBM_B.itemCapacity = 40;  BBM_B.craftTime = 180;
+BBM_C.consumePower(80);  BBM_C.itemCapacity = 60;  BBM_C.craftTime = 160;
+BBM_D.consumePower(90);  BBM_D.itemCapacity = 80;  BBM_D.craftTime = 140;
+BBM_E.consumePower(100); BBM_E.itemCapacity = 100; BBM_E.craftTime = 120;
 
 BBM_A.category = Category.crafting; BBM_B.category = Category.crafting; BBM_C.category = Category.crafting; BBM_D.category = Category.crafting; BBM_E.category = Category.crafting;
 
+
+
+const CMT_A = extend(GenericCrafter, "cmt-a", {buildVisibility: BuildVisibility.shown});
+const CMT_B = extend(GenericCrafter, "cmt-b", {buildVisibility: BuildVisibility.shown});
+const CMT_C = extend(GenericCrafter, "cmt-c", {buildVisibility: BuildVisibility.shown});
+const CMT_D = extend(GenericCrafter, "cmt-d", {buildVisibility: BuildVisibility.shown});
+const CMT_E = extend(GenericCrafter, "cmt-e", {buildVisibility: BuildVisibility.shown});
+
+CMT_A.size = 4; CMT_B.size = 4; CMT_C.size = 4; CMT_D.size = 4; CMT_E.size = 4; 
+
+CMT_A.localizedName = "T1 Creostone Melter";
+CMT_B.localizedName = "T2 Creostone Melter";
+CMT_C.localizedName = "T3 Creostone Melter";
+CMT_D.localizedName = "T4 Creostone Melter";
+CMT_E.localizedName = "T5 Creostone Melter";
+
+CMT_A.outputLiquid = new LiquidStack(creotite, 0.1)
+
+CMT_A.itemCapacity = 20;  CMT_A.liquidCapacity = 120;
+CMT_A.itemCapacity = 40;  CMT_A.liquidCapacity = 140;
+CMT_A.itemCapacity = 60;  CMT_A.liquidCapacity = 160;
+CMT_A.itemCapacity = 80;  CMT_A.liquidCapacity = 180;
+CMT_A.itemCapacity = 100; CMT_A.liquidCapacity = 200;
+
+CMT_A.requirements = ItemStack.with(Items.silicon, 10,  dense-alloy, 10, creostone, 10, Items.surgeAlloy, 10);
