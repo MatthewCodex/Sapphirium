@@ -1,0 +1,25 @@
+description: Produces blast compound from creostone and lead. Requires power.
+
+craftEffect: massiveExplosion
+
+updateEffect: {
+particles: 1
+sizeFrom: 5
+sizeTo: 0
+colorFrom: ffb38085
+colorTo: ffb38000
+length: 0
+lifetime: 80
+}
+
+updateEffectChance: 0.08
+
+size: 4
+
+hasPower: true
+
+hasLiquids: false
+
+shownPlanets: [serpulo]
+
+research: bbm-a

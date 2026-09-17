@@ -55,11 +55,11 @@ D_RUBY_C.craftTime = 30;
 D_RUBY_D.craftTime = 20;
 D_RUBY_E.craftTime = 10;
 
-//D_RUBY_A.category = Category.production;
-//D_RUBY_B.category = Category.production;
-//D_RUBY_C.category = Category.production;
-//D_RUBY_D.category = Category.production;
-//D_RUBY_E.category = Category.production;
+D_RUBY_A.category = Category.production;
+D_RUBY_B.category = Category.production;
+D_RUBY_C.category = Category.production;
+D_RUBY_D.category = Category.production;
+D_RUBY_E.category = Category.production;
 
 
 
@@ -115,62 +115,9 @@ D_EMERALD_C.craftTime = 30;
 D_EMERALD_D.craftTime = 20;
 D_EMERALD_E.craftTime = 10;
 
-//D_EMERALD_A.category = Category.production;
-//D_EMERALD_B.category = Category.production;
-//D_EMERALD_C.category = Category.production;
-//D_EMERALD_D.category = Category.production;
-//D_EMERALD_E.category = Category.production;
+D_EMERALD_A.category = Category.production;
+D_EMERALD_B.category = Category.production;
+D_EMERALD_C.category = Category.production;
+D_EMERALD_D.category = Category.production;
+D_EMERALD_E.category = Category.production;
 
-
-
-const D_GLOBIUM_A = extend(GenericCrafter, "d-globium-a", {buildVisibility: BuildVisibility.shown});
-const D_GLOBIUM_B = extend(GenericCrafter, "d-globium-b", {buildVisibility: BuildVisibility.shown});
-const D_GLOBIUM_C = extend(GenericCrafter, "d-globium-c", {buildVisibility: BuildVisibility.shown});
-const D_GLOBIUM_D = extend(GenericCrafter, "d-globium-d", {buildVisibility: BuildVisibility.shown});
-const D_GLOBIUM_E = extend(GenericCrafter, "d-globium-e", {buildVisibility: BuildVisibility.shown});
-
-D_GLOBIUM_A.size = 1;
-D_GLOBIUM_B.size = 2;
-D_GLOBIUM_C.size = 3;
-D_GLOBIUM_D.size = 4;
-D_GLOBIUM_E.size = 5;
-
-D_GLOBIUM_A.localizedName = "T1 Globium Drill";
-D_GLOBIUM_B.localizedName = "T2 Globium Drill";
-D_GLOBIUM_C.localizedName = "T3 Globium Drill";
-D_GLOBIUM_D.localizedName = "T4 Globium Drill";
-D_GLOBIUM_E.localizedName = "T5 Globium Drill";
-
-D_GLOBIUM_A.outputItems = [new ItemStack(globium, 1)];
-D_GLOBIUM_B.outputItems = [new ItemStack(globium, 1)];
-D_GLOBIUM_C.outputItems = [new ItemStack(globium, 2)];
-D_GLOBIUM_D.outputItems = [new ItemStack(globium, 2)];
-D_GLOBIUM_E.outputItems = [new ItemStack(globium, 3)];
-
-D_GLOBIUM_A.requirements = ItemStack.with(Items.copper, 10,  Items.lead, 10);
-D_GLOBIUM_B.requirements = ItemStack.with(Items.copper, 25,  Items.lead, 25,  globium, 25);
-D_GLOBIUM_C.requirements = ItemStack.with(Items.copper, 50,  Items.lead, 50,  globium, 50);
-D_GLOBIUM_D.requirements = ItemStack.with(Items.copper, 100,  Items.lead, 100,  globium, 100);
-D_GLOBIUM_E.requirements = ItemStack.with(Items.copper, 250,  Items.lead, 250,  Items.graphite, 250,  globium, 250);
-
-D_GLOBIUM_A.hasPower = false;
-D_GLOBIUM_B.hasPower = false;
-D_GLOBIUM_C.hasPower = true;
-D_GLOBIUM_D.hasPower = true;
-D_GLOBIUM_E.hasPower = true;
-
-D_GLOBIUM_C.consumePower(1);
-D_GLOBIUM_D.consumePower(2);
-D_GLOBIUM_E.consumePower(3);
-
-D_GLOBIUM_A.itemCapacity = 20;
-D_GLOBIUM_B.itemCapacity = 40;
-D_GLOBIUM_C.itemCapacity = 60;
-D_GLOBIUM_D.itemCapacity = 80;
-D_GLOBIUM_E.itemCapacity = 100;
-
-D_GLOBIUM_A.craftTime = 60;
-D_GLOBIUM_B.craftTime = 45;
-D_GLOBIUM_C.craftTime = 30;
-D_GLOBIUM_D.craftTime = 20;
-D_GLOBIUM_E.craftTime = 10;

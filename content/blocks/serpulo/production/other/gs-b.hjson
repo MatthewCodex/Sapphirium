@@ -1,0 +1,9 @@
+research: gs-a
+description: Produces globium from lead, titanium, and thorium. Requires power.
+hasPower: true
+hasItems: true
+shownPlanets: [serpulo , erekir]
+drawer: {
+    type: DrawMulti
+    drawers: [DrawDefault, DrawFlame]
+}

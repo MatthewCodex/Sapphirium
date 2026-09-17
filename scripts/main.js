@@ -34,4 +34,5 @@ require("SappLiquids");
 require("SappItems");
 require("SappWeathers");
 
-require("OtherDrills")
+require("OtherDrills");
+require("OtherCrafters");
