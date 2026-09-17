@@ -90,4 +90,4 @@ CMT_A.itemCapacity = 60;  CMT_A.liquidCapacity = 160;
 CMT_A.itemCapacity = 80;  CMT_A.liquidCapacity = 180;
 CMT_A.itemCapacity = 100; CMT_A.liquidCapacity = 200;
 
-CMT_A.requirements = ItemStack.with(Items.silicon, 10,  dense-alloy, 10, creostone, 10, Items.surgeAlloy, 10);
+CMT_A.requirements = ItemStack.with(Items.silicon, 10,  dense_alloy, 10, creostone, 10, Items.surgeAlloy, 10);
