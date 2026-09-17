@@ -23,32 +23,50 @@ const ruby = Vars.content.getByName(ContentType.item, "sapphirium-ruby");
 const topaz = Vars.content.getByName(ContentType.item, "sapphirium-topaz");
 
 const BBM_A = extend(GenericCrafter, "bbm-a", {buildVisibility: BuildVisibility.shown});
+const BBM_B = extend(GenericCrafter, "bbm-b", {buildVisibility: BuildVisibility.shown});
+const BBM_C = extend(GenericCrafter, "bbm-c", {buildVisibility: BuildVisibility.shown});
+const BBM_D = extend(GenericCrafter, "bbm-d", {buildVisibility: BuildVisibility.shown});
+const BBM_E = extend(GenericCrafter, "bbm-e", {buildVisibility: BuildVisibility.shown});
 
-BBM_A.size = 4;
+BBM_A.size = 4; BBM_B.size = 4; BBM_C.size = 4; BBM_D.size = 4; BBM_E.size = 4;
 
 BBM_A.localizedName = "T1 Big Blast Mixer";
+BBM_B.localizedName = "T2 Big Blast Mixer";
+BBM_C.localizedName = "T3 Big Blast Mixer";
+BBM_D.localizedName = "T4 Big Blast Mixer";
+BBM_E.localizedName = "T5 Big Blast Mixer";
 
 BBM_A.outputItems = [new ItemStack(Items.blastCompound, 18)];
+BBM_B.outputItems = [new ItemStack(Items.blastCompound, 18)];
+BBM_C.outputItems = [new ItemStack(Items.blastCompound, 18)];
+BBM_D.outputItems = [new ItemStack(Items.blastCompound, 18)];
+BBM_E.outputItems = [new ItemStack(Items.blastCompound, 18)];
+
+BBM_A.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
 
 BBM_A.requirements = ItemStack.with(creostone, 10,  Items.thorium, 10, Items.silicon, 10, Items.plastanium, 10);
+BBM_B.requirements = ItemStack.with(creostone, 25,  Items.thorium, 25, Items.silicon, 25, Items.plastanium, 25);
+BBM_C.requirements = ItemStack.with(creostone, 50,  Items.thorium, 50, Items.silicon, 50, Items.plastanium, 50);
+BBM_D.requirements = ItemStack.with(creostone, 75,  Items.thorium, 75, Items.silicon, 75, Items.plastanium, 75);
+BBM_E.requirements = ItemStack.with(creostone, 100,  Items.thorium, 100, Items.silicon, 100, Items.plastanium, 100);
 
 BBM_A.consumePower(60);
+BBM_B.consumePower(70);
+BBM_C.consumePower(80);
+BBM_D.consumePower(90);
+BBM_E.consumePower(100);
 
 BBM_A.itemCapacity = 20;
-//D_RUBY_B.itemCapacity = 40;
-//D_RUBY_C.itemCapacity = 60;
-//D_RUBY_D.itemCapacity = 80;
-//D_RUBY_E.itemCapacity = 100;
+BBM_B.itemCapacity = 40;
+BBM_C.itemCapacity = 60;
+BBM_D.itemCapacity = 80;
+BBM_E.itemCapacity = 100;
 
 BBM_A.craftTime = 200;
-//D_RUBY_B.craftTime = 180;
-//D_RUBY_C.craftTime = 160;
-//D_RUBY_D.craftTime = 140;
-//D_RUBY_E.craftTime = 120;
+BBM_B.craftTime = 180;
+BBM_C.craftTime = 160;
+BBM_D.craftTime = 140;
+BBM_E.craftTime = 120;
 
-BBM_A.category = Category.crafting;
-//D_RUBY_B.category = Category.crafting;
-//D_RUBY_C.category = Category.crafting;
-//D_RUBY_D.category = Category.crafting;
-//D_RUBY_E.category = Category.crafting;
+BBM_A.category = Category.crafting; BBM_B.category = Category.crafting; BBM_C.category = Category.crafting; BBM_D.category = Category.crafting; BBM_E.category = Category.crafting;
 
