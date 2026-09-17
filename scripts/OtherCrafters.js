@@ -43,6 +43,10 @@ BBM_D.outputItems = [new ItemStack(Items.blastCompound, 18)];
 BBM_E.outputItems = [new ItemStack(Items.blastCompound, 18)];
 
 BBM_A.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
+BBM_B.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
+BBM_C.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
+BBM_D.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
+BBM_E.inputItems = ItemStack.with(creostone, 12, Items.lead, 12);
 
 BBM_A.requirements = ItemStack.with(creostone, 10,  Items.thorium, 10, Items.silicon, 10, Items.plastanium, 10);
 BBM_B.requirements = ItemStack.with(creostone, 25,  Items.thorium, 25, Items.silicon, 25, Items.plastanium, 25);
