@@ -82,7 +82,11 @@ CMT_C.localizedName = "T3 Creostone Melter";
 CMT_D.localizedName = "T4 Creostone Melter";
 CMT_E.localizedName = "T5 Creostone Melter";
 
-CMT_A.outputLiquid = new LiquidStack(creotite, 0.1)
+CMT_A.outputLiquid = new LiquidStack(creotite, 0.1);
+CMT_B.outputLiquid = new LiquidStack(creotite, 0.1);
+CMT_C.outputLiquid = new LiquidStack(creotite, 0.2);
+CMT_D.outputLiquid = new LiquidStack(creotite, 0.2);
+CMT_E.outputLiquid = new LiquidStack(creotite, 0.3);
 
 CMT_A.itemCapacity = 20;  CMT_A.liquidCapacity = 120;
 CMT_B.itemCapacity = 40;  CMT_A.liquidCapacity = 140;
