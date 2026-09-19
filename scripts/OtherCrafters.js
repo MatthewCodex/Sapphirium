@@ -46,11 +46,11 @@ BBM_C.outputItems = [new ItemStack(Items.blastCompound, 18)];
 BBM_D.outputItems = [new ItemStack(Items.blastCompound, 18)];
 BBM_E.outputItems = [new ItemStack(Items.blastCompound, 18)];
 
-BBM_A.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 12)));
-BBM_B.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 12)));
-BBM_C.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 12)));
-BBM_D.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 12)));
-BBM_E.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 12)));
+BBM_A.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 4)));
+BBM_B.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 4)));
+BBM_C.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 4)));
+BBM_D.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 4)));
+BBM_E.consume(new ConsumeItems(ItemStack.with(creostone, 12, Items.lead, 4)));
 
 BBM_A.requirements = ItemStack.with(creostone, 10,  Items.thorium, 10, Items.silicon, 10, Items.plastanium, 10);
 BBM_B.requirements = ItemStack.with(creostone, 25,  Items.thorium, 25, Items.silicon, 25, Items.plastanium, 25);
@@ -100,6 +100,10 @@ CMT_C.requirements = ItemStack.with(Items.silicon, 50,  dense_alloy, 50, creosto
 CMT_D.requirements = ItemStack.with(Items.silicon, 100,  dense_alloy, 100, creostone, 100, Items.surgeAlloy, 100);
 CMT_E.requirements = ItemStack.with(Items.silicon, 200,  dense_alloy, 200, creostone, 200, Items.surgeAlloy, 200);
 
-
+BBM_A.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+BBM_B.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+BBM_C.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+BBM_D.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+BBM_E.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
 
 
