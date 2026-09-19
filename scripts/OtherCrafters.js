@@ -100,11 +100,11 @@ CMT_C.requirements = ItemStack.with(Items.silicon, 50,  dense_alloy, 50, creosto
 CMT_D.requirements = ItemStack.with(Items.silicon, 100,  dense_alloy, 100, creostone, 100, Items.surgeAlloy, 100);
 CMT_E.requirements = ItemStack.with(Items.silicon, 200,  dense_alloy, 200, creostone, 200, Items.surgeAlloy, 200);
 
-BBM_A.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
-BBM_B.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
-BBM_C.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
-BBM_D.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
-BBM_E.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+CMT_A.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+CMT_B.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+CMT_C.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+CMT_D.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
+CMT_E.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
 
 CMT_A.category = Category.crafting; CMT_B.category = Category.crafting; CMT_C.category = Category.crafting; CMT_D.category = Category.crafting; CMT_E.category = Category.crafting;
 
