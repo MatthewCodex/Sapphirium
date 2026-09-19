@@ -106,4 +106,5 @@ BBM_C.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
 BBM_D.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
 BBM_E.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
 
+CMT_A.category = Category.crafting; CMT_B.category = Category.crafting; CMT_C.category = Category.crafting; CMT_D.category = Category.crafting; CMT_E.category = Category.crafting;
 
