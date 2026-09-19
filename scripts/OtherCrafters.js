@@ -85,9 +85,17 @@ CMT_E.localizedName = "T5 Creostone Melter";
 CMT_A.outputLiquid = new LiquidStack(creotite, 0.1)
 
 CMT_A.itemCapacity = 20;  CMT_A.liquidCapacity = 120;
-CMT_A.itemCapacity = 40;  CMT_A.liquidCapacity = 140;
-CMT_A.itemCapacity = 60;  CMT_A.liquidCapacity = 160;
-CMT_A.itemCapacity = 80;  CMT_A.liquidCapacity = 180;
-CMT_A.itemCapacity = 100; CMT_A.liquidCapacity = 200;
+CMT_B.itemCapacity = 40;  CMT_A.liquidCapacity = 140;
+CMT_C.itemCapacity = 60;  CMT_A.liquidCapacity = 160;
+CMT_D.itemCapacity = 80;  CMT_A.liquidCapacity = 180;
+CMT_E.itemCapacity = 100; CMT_A.liquidCapacity = 200;
 
 CMT_A.requirements = ItemStack.with(Items.silicon, 10,  dense_alloy, 10, creostone, 10, Items.surgeAlloy, 10);
+CMT_B.requirements = ItemStack.with(Items.silicon, 25,  dense_alloy, 25, creostone, 25, Items.surgeAlloy, 25);
+CMT_C.requirements = ItemStack.with(Items.silicon, 50,  dense_alloy, 50, creostone, 50, Items.surgeAlloy, 50);
+CMT_D.requirements = ItemStack.with(Items.silicon, 100,  dense_alloy, 100, creostone, 100, Items.surgeAlloy, 100);
+CMT_E.requirements = ItemStack.with(Items.silicon, 200,  dense_alloy, 200, creostone, 200, Items.surgeAlloy, 200);
+
+
+
+
