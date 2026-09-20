@@ -82,11 +82,11 @@ CMT_C.localizedName = "T3 Creostone Melter";
 CMT_D.localizedName = "T4 Creostone Melter";
 CMT_E.localizedName = "T5 Creostone Melter";
 
-CMT_A.outputLiquid = new LiquidStack(creotite, 0.1);
-CMT_B.outputLiquid = new LiquidStack(creotite, 0.1);
-CMT_C.outputLiquid = new LiquidStack(creotite, 0.2);
-CMT_D.outputLiquid = new LiquidStack(creotite, 0.2);
-CMT_E.outputLiquid = new LiquidStack(creotite, 0.3);
+CMT_A.outputLiquid = new LiquidStack(creotite, 0.5);
+CMT_B.outputLiquid = new LiquidStack(creotite, 0.75);
+CMT_C.outputLiquid = new LiquidStack(creotite, 1.0);
+CMT_D.outputLiquid = new LiquidStack(creotite, 1.25);
+CMT_E.outputLiquid = new LiquidStack(creotite, 1.5);
 
 CMT_A.itemCapacity = 20;  CMT_A.liquidCapacity = 120;
 CMT_B.itemCapacity = 40;  CMT_A.liquidCapacity = 140;
@@ -108,3 +108,40 @@ CMT_E.consume(new ConsumeItems(ItemStack.with(creostone, 5, tinorium, 1)));
 
 CMT_A.category = Category.crafting; CMT_B.category = Category.crafting; CMT_C.category = Category.crafting; CMT_D.category = Category.crafting; CMT_E.category = Category.crafting;
 
+CMT_A.consumePower(3);  CMT_A.itemCapacity = 20;  CMT_A.craftTime = 45; CMT_A.liquidCapacity = 100;
+CMT_B.consumePower(6);  CMT_B.itemCapacity = 40;  CMT_B.craftTime = 40; CMT_B.liquidCapacity = 150;
+CMT_C.consumePower(9);  CMT_C.itemCapacity = 60;  CMT_C.craftTime = 35; CMT_C.liquidCapacity = 200;
+CMT_D.consumePower(12); CMT_D.itemCapacity = 80;  CMT_D.craftTime = 30; CMT_D.liquidCapacity = 250;
+CMT_E.consumePower(15); CMT_E.itemCapacity = 100; CMT_E.craftTime = 25; CMT_E.liquidCapacity = 300;
+
+
+
+const CST_A = extend(GenericCrafter, "cmt-a", {buildVisibility: BuildVisibility.shown});
+const CST_B = extend(GenericCrafter, "cmt-b", {buildVisibility: BuildVisibility.shown});
+const CST_C = extend(GenericCrafter, "cmt-c", {buildVisibility: BuildVisibility.shown});
+const CST_D = extend(GenericCrafter, "cmt-d", {buildVisibility: BuildVisibility.shown});
+const CST_E = extend(GenericCrafter, "cmt-e", {buildVisibility: BuildVisibility.shown});
+
+CST_A.size = 2; CST_B.size = 2; CST_C.size = 2; CST_D.size = 2; CST_E.size = 2;
+
+CST_A.category = Category.crafting; CST_B.category = Category.crafting; CST_C.category = Category.crafting; CST_D.category = Category.crafting; CST_E.category = Category.crafting;
+
+CST_A.requirements = ItemStack.with(dense_alloy, 10,  Items.silicon, 10,  Items.thorium, 10);
+CST_B.requirements = ItemStack.with(dense_alloy, 25,  Items.silicon, 25,  Items.thorium, 25);
+CST_C.requirements = ItemStack.with(dense_alloy, 50,  Items.silicon, 50,  Items.thorium, 50);
+CST_D.requirements = ItemStack.with(dense_alloy, 100, Items.silicon, 100, Items.thorium, 100);
+CST_E.requirements = ItemStack.with(dense_alloy, 200, Items.silicon, 200, Items.thorium, 200);
+
+CST_A.outputItems = [new ItemStack(creostone, 1)];
+CST_B.outputItems = [new ItemStack(creostone, 1)];
+CST_C.outputItems = [new ItemStack(creostone, 2)];
+CST_D.outputItems = [new ItemStack(creostone, 2)];
+CST_E.outputItems = [new ItemStack(creostone, 2)];
+
+CST_A.craftTime = 25; CST_A.itemCapacity = 20;  CST_A.liquidCapacity = 100;  CST_A.consumePower(4);
+CST_B.craftTime = 20; CST_B.itemCapacity = 40;  CST_B.liquidCapacity = 150;  CST_B.consumePower(6);
+CST_C.craftTime = 15; CST_C.itemCapacity = 60;  CST_C.liquidCapacity = 200;  CST_C.consumePower(8);
+CST_D.craftTime = 10; CST_D.itemCapacity = 80;  CST_D.liquidCapacity = 250;  CST_D.consumePower(10);
+CST_E.craftTime = 5;  CST_E.itemCapacity = 100; CST_E.liquidCapacity = 300;  CST_E.consumePower(12);
+
+CST_A.consume(new ConsumeItems(ItemStack(Items.silicon, 2))); CST_A.consume(new ConsumeLiquids(new LiquidStack(creotite, 0.1)));
