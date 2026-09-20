@@ -144,4 +144,4 @@ CST_C.craftTime = 15; CST_C.itemCapacity = 60;  CST_C.liquidCapacity = 200;  CST
 CST_D.craftTime = 10; CST_D.itemCapacity = 80;  CST_D.liquidCapacity = 250;  CST_D.consumePower(10);
 CST_E.craftTime = 5;  CST_E.itemCapacity = 100; CST_E.liquidCapacity = 300;  CST_E.consumePower(12);
 
-CST_A.consume(new ConsumeItems(ItemStack(Items.silicon, 2))); CST_A.consume(new ConsumeLiquids(new LiquidStack(creotite, 0.1)));
+CST_A.consume(new ConsumeItems(ItemStack.with(Items.silicon, 2))); CST_A.consume(new ConsumeLiquid(creotite, 0.1));
