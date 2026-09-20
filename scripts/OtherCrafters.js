@@ -116,11 +116,11 @@ CMT_E.consumePower(15); CMT_E.itemCapacity = 100; CMT_E.craftTime = 25; CMT_E.li
 
 
 
-const CST_A = extend(GenericCrafter, "cmt-a", {buildVisibility: BuildVisibility.shown});
-const CST_B = extend(GenericCrafter, "cmt-b", {buildVisibility: BuildVisibility.shown});
-const CST_C = extend(GenericCrafter, "cmt-c", {buildVisibility: BuildVisibility.shown});
-const CST_D = extend(GenericCrafter, "cmt-d", {buildVisibility: BuildVisibility.shown});
-const CST_E = extend(GenericCrafter, "cmt-e", {buildVisibility: BuildVisibility.shown});
+const CST_A = extend(GenericCrafter, "cst-a", {buildVisibility: BuildVisibility.shown});
+const CST_B = extend(GenericCrafter, "cst-b", {buildVisibility: BuildVisibility.shown});
+const CST_C = extend(GenericCrafter, "cst-c", {buildVisibility: BuildVisibility.shown});
+const CST_D = extend(GenericCrafter, "cst-d", {buildVisibility: BuildVisibility.shown});
+const CST_E = extend(GenericCrafter, "cst-e", {buildVisibility: BuildVisibility.shown});
 
 CST_A.size = 2; CST_B.size = 2; CST_C.size = 2; CST_D.size = 2; CST_E.size = 2;
 
