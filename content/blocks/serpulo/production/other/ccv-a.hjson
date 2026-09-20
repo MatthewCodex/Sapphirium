@@ -49,23 +49,9 @@ drawer: [
         suffix: -heat
     }
 ]
-consumes: {
-    power: 20
-    liquid: creotite/0.4
-    items: {
-        items: [
-            silicon/6
-            blast-compound/2
-        ]
-    }
-}
+
 category: crafting
-requirements: [
-    dense-alloy/130
-    thorium/100
-    silicon/100
-    creostone/90
-]
+
 size: 3
 research: creotite-converter
 attribute: heat
