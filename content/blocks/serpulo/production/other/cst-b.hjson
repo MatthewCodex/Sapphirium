@@ -1,0 +1,11 @@
+
+
+
+drawer: {
+    type: DrawMulti
+    drawers: [DrawDefault, DrawFlame]
+}
+
+craftEffect: redgeneratespark
+research: cst-a
+shownPlanets: [serpulo]

@@ -145,3 +145,43 @@ CST_D.craftTime = 10; CST_D.itemCapacity = 80;  CST_D.liquidCapacity = 250;  CST
 CST_E.craftTime = 5;  CST_E.itemCapacity = 100; CST_E.liquidCapacity = 300;  CST_E.consumePower(12);
 
 CST_A.consume(new ConsumeItems(ItemStack.with(Items.silicon, 2))); CST_A.consume(new ConsumeLiquid(creotite, 0.1));
+CST_B.consume(new ConsumeItems(ItemStack.with(Items.silicon, 2))); CST_B.consume(new ConsumeLiquid(creotite, 0.1));
+CST_C.consume(new ConsumeItems(ItemStack.with(Items.silicon, 2))); CST_C.consume(new ConsumeLiquid(creotite, 0.1));
+CST_D.consume(new ConsumeItems(ItemStack.with(Items.silicon, 2))); CST_D.consume(new ConsumeLiquid(creotite, 0.1));
+CST_E.consume(new ConsumeItems(ItemStack.with(Items.silicon, 2))); CST_E.consume(new ConsumeLiquid(creotite, 0.1));
+
+
+
+const CCV_A = extend(AttributeCrafter, "ccv-a", {buildVisibility: BuildVisibility.shown});
+const CCV_B = extend(AttributeCrafter, "ccv-b", {buildVisibility: BuildVisibility.shown});
+const CCV_C = extend(AttributeCrafter, "ccv-c", {buildVisibility: BuildVisibility.shown});
+const CCV_D = extend(AttributeCrafter, "ccv-d", {buildVisibility: BuildVisibility.shown});
+const CCV_E = extend(AttributeCrafter, "ccv-e", {buildVisibility: BuildVisibility.shown});
+
+CCV_A.craftTime = 135; CCV_B.craftTime = 120; CCV_C.craftTime = 105; CCV_D.craftTime = 90; CCV_E.craftTime = 75;
+
+CCV_A.outputItems = [new ItemStack(creostone, 8)];  CCV_A.outputLiquid = new LiquidStack(Liquids.slag, 0.15);
+CCV_B.outputItems = [new ItemStack(creostone, 8)];  CCV_B.outputLiquid = new LiquidStack(Liquids.slag, 0.3);
+CCV_C.outputItems = [new ItemStack(creostone, 10)]; CCV_C.outputLiquid = new LiquidStack(Liquids.slag, 0.45);
+CCV_D.outputItems = [new ItemStack(creostone, 10)]; CCV_D.outputLiquid = new LiquidStack(Liquids.slag, 0.6);
+CCV_E.outputItems = [new ItemStack(creostone, 12)]; CCV_E.outputLiquid = new LiquidStack(Liquids.slag, 0.75);
+
+CCV_A.itemCapacity = 20;  CCV_A.liquidCapacity = 30;
+CCV_B.itemCapacity = 40;  CCV_B.liquidCapacity = 60;
+CCV_C.itemCapacity = 60;  CCV_C.liquidCapacity = 90;
+CCV_D.itemCapacity = 80;  CCV_D.liquidCapacity = 120;
+CCV_E.itemCapacity = 100; CCV_E.liquidCapacity = 150;
+
+CCV_A.consumePower(20); CCV_B.consumePower(30); CCV_C.consumePower(40); CCV_D.consumePower(50); CCV_E.consumePower(60);
+
+CCV_A.consume(new ConsumeItems(ItemStack.with(Items.silicon, 6, Items.blastCompound, 2))); CCV_A.consume(new ConsumeLiquid(creotite, 0.4));
+CCV_B.consume(new ConsumeItems(ItemStack.with(Items.silicon, 6, Items.blastCompound, 2))); CCV_B.consume(new ConsumeLiquid(creotite, 0.4));
+CCV_C.consume(new ConsumeItems(ItemStack.with(Items.silicon, 6, Items.blastCompound, 2))); CCV_C.consume(new ConsumeLiquid(creotite, 0.4));
+CCV_D.consume(new ConsumeItems(ItemStack.with(Items.silicon, 6, Items.blastCompound, 2))); CCV_D.consume(new ConsumeLiquid(creotite, 0.4));
+CCV_E.consume(new ConsumeItems(ItemStack.with(Items.silicon, 6, Items.blastCompound, 2))); CCV_E.consume(new ConsumeLiquid(creotite, 0.4));
+
+CCV_A.requirements = ItemStack.with(dense_alloy, 10,  Items.thorium, 10,  Items.silicon, 10,  creostone, 10);
+CCV_B.requirements = ItemStack.with(dense_alloy, 25,  Items.thorium, 25,  Items.silicon, 25,  creostone, 25);
+CCV_C.requirements = ItemStack.with(dense_alloy, 50,  Items.thorium, 50,  Items.silicon, 50,  creostone, 50);
+CCV_D.requirements = ItemStack.with(dense_alloy, 100, Items.thorium, 100, Items.silicon, 100, creostone, 100);
+CCV_E.requirements = ItemStack.with(dense_alloy, 200, Items.thorium, 200, Items.silicon, 200, creostone, 200);
