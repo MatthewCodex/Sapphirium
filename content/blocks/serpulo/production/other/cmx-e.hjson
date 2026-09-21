@@ -32,7 +32,6 @@ hasItems: true
 hasLiquids: true
 outputsLiquid: true
 consumes: {
-    power: 5.5
     liquid: cryofluid/0.3
     items: {
         items: [

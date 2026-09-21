@@ -1,0 +1,27 @@
+
+category: crafting
+craftEffect: smeltsmoke
+
+
+size: 2
+
+hasLiquids: false
+drawer: {
+    type: DrawMulti
+    drawers: [
+        DrawDefault, 
+        DrawFlame
+    ]
+}
+ambientSound: loopSmelter
+ambientSoundVolume: 0.07
+consumes: {
+    items: {
+        items: [
+            copper/1
+            lead/1
+        ]
+    }
+}
+research: ds-a
+shownPlanets: [serpulo]

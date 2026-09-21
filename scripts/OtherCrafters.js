@@ -240,4 +240,24 @@ CMX_B.itemCapacity = 80;  CMX_B.liquidCapacity = 60;
 
 
 
+const DS_A = extend(GenericCrafter, "ds-a", {buildVisibility: BuildVisibility.shown});
+const DS_B = extend(GenericCrafter, "ds-b", {buildVisibility: BuildVisibility.shown});
+const DS_C = extend(GenericCrafter, "ds-c", {buildVisibility: BuildVisibility.shown});
+const DS_D = extend(GenericCrafter, "ds-d", {buildVisibility: BuildVisibility.shown});
+const DS_E = extend(GenericCrafter, "ds-e", {buildVisibility: BuildVisibility.shown});
 
+DS_A.requirements = ItemStack.with(Items.copper, 10,  Items.lead, 10);
+DS_B.requirements = ItemStack.with(Items.copper, 25,  Items.lead, 25);
+DS_C.requirements = ItemStack.with(Items.copper, 50,  Items.lead, 50);
+DS_D.requirements = ItemStack.with(Items.copper, 75,  Items.lead, 75);
+DS_E.requirements = ItemStack.with(Items.copper, 100, Items.lead, 100);
+
+DS_A.outputItems = [new ItemStack(dense_alloy, 2)]; DS_A.hasPower = false; DS_A.craftTime = 35;
+DS_B.outputItems = [new ItemStack(dense_alloy, 3)]; DS_B.hasPower = false; DS_B.craftTime = 30;
+DS_C.outputItems = [new ItemStack(dense_alloy, 4)]; DS_C.hasPower = true;  DS_C.craftTime = 25;
+DS_D.outputItems = [new ItemStack(dense_alloy, 5)]; DS_D.hasPower = true;  DS_D.craftTime = 20;
+DS_E.outputItems = [new ItemStack(dense_alloy, 6)]; DS_E.hasPower = true;  DS_E.craftTime = 15;
+
+DS_C.consumePower(0.8)
+DS_D.consumePower(0.9)
+DS_E.consumePower(1.0)
