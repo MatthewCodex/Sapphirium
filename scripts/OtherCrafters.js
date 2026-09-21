@@ -200,17 +200,44 @@ CMM_C.requirements = ItemStack.with(dense_alloy, 150, globium, 150, Items.thoriu
 CMM_D.requirements = ItemStack.with(dense_alloy, 300, globium, 300, Items.thorium, 300, Items.silicon, 300, creostone, 300, Items.surgeAlloy, 300);
 CMM_E.requirements = ItemStack.with(dense_alloy, 600, globium, 600, Items.thorium, 600, Items.silicon, 600, creostone, 600, Items.surgeAlloy, 600);
 
-CMM_A.outputLiquid = new LiquidStack(Liquids.slag, 2);   CMM_A.craftTime = 300; CMM_A.consumePower(100);
-CMM_B.outputLiquid = new LiquidStack(Liquids.slag, 2.5); CMM_B.craftTime = 270; CMM_B.consumePower(125);
-CMM_C.outputLiquid = new LiquidStack(Liquids.slag, 3);   CMM_C.craftTime = 240; CMM_C.consumePower(150);
-CMM_D.outputLiquid = new LiquidStack(Liquids.slag, 3.5); CMM_D.craftTime = 210; CMM_D.consumePower(175);
-CMM_E.outputLiquid = new LiquidStack(Liquids.slag, 4);   CMM_E.craftTime = 180; CMM_E.consumePower(200);
+CMM_A.outputLiquid = new LiquidStack(creotite, 2);   CMM_A.craftTime = 300; CMM_A.consumePower(100);
+CMM_B.outputLiquid = new LiquidStack(creotite, 2.5); CMM_B.craftTime = 270; CMM_B.consumePower(125);
+CMM_C.outputLiquid = new LiquidStack(creotite, 3);   CMM_C.craftTime = 240; CMM_C.consumePower(150);
+CMM_D.outputLiquid = new LiquidStack(creotite, 3.5); CMM_D.craftTime = 210; CMM_D.consumePower(175);
+CMM_E.outputLiquid = new LiquidStack(creotite, 4);   CMM_E.craftTime = 180; CMM_E.consumePower(200);
 
 CMM_A.itemCapacity = 30;  CMM_A.liquidCapacity = 210;
 CMM_B.itemCapacity = 60;  CMM_B.liquidCapacity = 240;
-CMM_B.itemCapacity = 90;  CMM_B.liquidCapacity = 270;
-CMM_B.itemCapacity = 120; CMM_B.liquidCapacity = 300;
-CMM_B.itemCapacity = 150; CMM_B.liquidCapacity = 330;
+CMM_C.itemCapacity = 90;  CMM_C.liquidCapacity = 270;
+CMM_D.itemCapacity = 120; CMM_D.liquidCapacity = 300;
+CMM_E.itemCapacity = 150; CMM_E.liquidCapacity = 330;
+
+
+
+const CMX_A = extend(GenericCrafter, "cmx-a", {buildVisibility: BuildVisibility.shown});
+const CMX_B = extend(GenericCrafter, "cmx-b", {buildVisibility: BuildVisibility.shown});
+const CMX_C = extend(GenericCrafter, "cmx-c", {buildVisibility: BuildVisibility.shown});
+const CMX_D = extend(GenericCrafter, "cmx-d", {buildVisibility: BuildVisibility.shown});
+const CMX_E = extend(GenericCrafter, "cmx-e", {buildVisibility: BuildVisibility.shown});
+
+CMX_A.requirements = ItemStack.with(dense_alloy, 10,  Items.titanium, 10,  Items.thorium, 10,  Items.silicon, 10);
+CMX_B.requirements = ItemStack.with(dense_alloy, 25,  Items.titanium, 25,  Items.thorium, 25,  Items.silicon, 25);
+CMX_C.requirements = ItemStack.with(dense_alloy, 50,  Items.titanium, 50,  Items.thorium, 50,  Items.silicon, 50);
+CMX_D.requirements = ItemStack.with(dense_alloy, 100, Items.titanium, 100, Items.thorium, 100, Items.silicon, 100);
+CMX_E.requirements = ItemStack.with(dense_alloy, 200, Items.titanium, 200, Items.thorium, 200, Items.silicon, 200);
+
+CMX_A.outputLiquid = new LiquidStack(creotite, 0.4); CMX_A.craftTime = 100; CMX_A.consumePower(5.5);
+CMX_B.outputLiquid = new LiquidStack(creotite, 0.5); CMX_B.craftTime = 90;  CMX_B.consumePower(6);
+CMX_C.outputLiquid = new LiquidStack(creotite, 0.6); CMX_C.craftTime = 80;  CMX_C.consumePower(6.5);
+CMX_D.outputLiquid = new LiquidStack(creotite, 0.7); CMX_D.craftTime = 70;  CMX_D.consumePower(7);
+CMX_E.outputLiquid = new LiquidStack(creotite, 0.8); CMX_E.craftTime = 60;  CMX_E.consumePower(7.5);
+
+CMX_A.itemCapacity = 20;  CMX_A.liquidCapacity = 36;
+CMX_B.itemCapacity = 30;  CMX_B.liquidCapacity = 40;
+CMX_B.itemCapacity = 40;  CMX_B.liquidCapacity = 44;
+CMX_B.itemCapacity = 50;  CMX_B.liquidCapacity = 48;
+CMX_B.itemCapacity = 80;  CMX_B.liquidCapacity = 60;
+
 
 
 
