@@ -185,3 +185,32 @@ CCV_B.requirements = ItemStack.with(dense_alloy, 25,  Items.thorium, 25,  Items.
 CCV_C.requirements = ItemStack.with(dense_alloy, 50,  Items.thorium, 50,  Items.silicon, 50,  creostone, 50);
 CCV_D.requirements = ItemStack.with(dense_alloy, 100, Items.thorium, 100, Items.silicon, 100, creostone, 100);
 CCV_E.requirements = ItemStack.with(dense_alloy, 200, Items.thorium, 200, Items.silicon, 200, creostone, 200);
+
+
+
+const CMM_A = extend(GenericCrafter, "cmm-a", {buildVisibility: BuildVisibility.shown});
+const CMM_B = extend(GenericCrafter, "cmm-b", {buildVisibility: BuildVisibility.shown});
+const CMM_C = extend(GenericCrafter, "cmm-c", {buildVisibility: BuildVisibility.shown});
+const CMM_D = extend(GenericCrafter, "cmm-d", {buildVisibility: BuildVisibility.shown});
+const CMM_E = extend(GenericCrafter, "cmm-e", {buildVisibility: BuildVisibility.shown});
+
+CMM_A.requirements = ItemStack.with(dense_alloy, 50,  globium, 50,  Items.thorium, 50,  Items.silicon, 50,  creostone, 50,  Items.surgeAlloy, 50);
+CMM_B.requirements = ItemStack.with(dense_alloy, 75,  globium, 75,  Items.thorium, 75,  Items.silicon, 75,  creostone, 75,  Items.surgeAlloy, 75);
+CMM_C.requirements = ItemStack.with(dense_alloy, 150, globium, 150, Items.thorium, 150, Items.silicon, 150, creostone, 150, Items.surgeAlloy, 150);
+CMM_D.requirements = ItemStack.with(dense_alloy, 300, globium, 300, Items.thorium, 300, Items.silicon, 300, creostone, 300, Items.surgeAlloy, 300);
+CMM_E.requirements = ItemStack.with(dense_alloy, 600, globium, 600, Items.thorium, 600, Items.silicon, 600, creostone, 600, Items.surgeAlloy, 600);
+
+CMM_A.outputLiquid = new LiquidStack(Liquids.slag, 2);   CMM_A.craftTime = 300; CMM_A.consumePower(100);
+CMM_B.outputLiquid = new LiquidStack(Liquids.slag, 2.5); CMM_B.craftTime = 270; CMM_B.consumePower(125);
+CMM_C.outputLiquid = new LiquidStack(Liquids.slag, 3);   CMM_C.craftTime = 240; CMM_C.consumePower(150);
+CMM_D.outputLiquid = new LiquidStack(Liquids.slag, 3.5); CMM_D.craftTime = 210; CMM_D.consumePower(175);
+CMM_E.outputLiquid = new LiquidStack(Liquids.slag, 4);   CMM_E.craftTime = 180; CMM_E.consumePower(200);
+
+CMM_A.itemCapacity = 30;  CMM_A.liquidCapacity = 210;
+CMM_B.itemCapacity = 60;  CMM_B.liquidCapacity = 240;
+CMM_B.itemCapacity = 90;  CMM_B.liquidCapacity = 270;
+CMM_B.itemCapacity = 120; CMM_B.liquidCapacity = 300;
+CMM_B.itemCapacity = 150; CMM_B.liquidCapacity = 330;
+
+
+
