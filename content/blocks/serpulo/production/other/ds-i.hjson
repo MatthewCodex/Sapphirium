@@ -1,0 +1,44 @@
+
+category: crafting
+craftEffect: {
+particles: 12
+length: 17
+lifetime: 22
+sizeFrom: 5
+sizeTo: 1
+colorFrom: ffffff
+colorTo: ffffff
+cone: 360
+region: sapphirium-rhombus
+}
+updateEffect: smoke
+
+size: 3
+hasPower: true
+hasLiquids: true
+
+drawer: {
+    type: DrawMulti
+    drawers: [
+        DrawDefault,
+        DrawFlame,
+        {
+        type: DrawGlowRegion
+        suffix: "-vents"
+        color: ffe18f
+        }
+    ]
+}
+ambientSound: loopSmelter
+ambientSoundVolume: 0.07
+consumes: {
+    items: {
+        items: [
+            copper/6
+            lead/6
+            blast-compound/1
+        ]
+    }
+}
+research: ds-h
+shownPlanets: [serpulo]

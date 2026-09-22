@@ -26,6 +26,8 @@ const creotite = Vars.content.getByName(ContentType.liquid, "sapphirium-creotite
 const ledonite = Vars.content.getByName(ContentType.liquid, "sapphirium-ledonite-liquid");
 const surge_mass = Vars.content.getByName(ContentType.liquid, "sapphirium-surge-mass");
 
+
+
 const BBM_A = extend(GenericCrafter, "bbm-a", {buildVisibility: BuildVisibility.shown});
 const BBM_B = extend(GenericCrafter, "bbm-b", {buildVisibility: BuildVisibility.shown});
 const BBM_C = extend(GenericCrafter, "bbm-c", {buildVisibility: BuildVisibility.shown});
@@ -258,6 +260,36 @@ DS_C.outputItems = [new ItemStack(dense_alloy, 4)]; DS_C.hasPower = true;  DS_C.
 DS_D.outputItems = [new ItemStack(dense_alloy, 5)]; DS_D.hasPower = true;  DS_D.craftTime = 20;
 DS_E.outputItems = [new ItemStack(dense_alloy, 6)]; DS_E.hasPower = true;  DS_E.craftTime = 15;
 
+DS_A.itemCapacity = 20; DS_B.itemCapacity = 30; DS_C.itemCapacity = 40; DS_D.itemCapacity = 50; DS_E.itemCapacity = 60;
+
 DS_C.consumePower(0.8)
 DS_D.consumePower(0.9)
 DS_E.consumePower(1.0)
+
+
+
+const DS_F = extend(GenericCrafter, "ds-f", {buildVisibility: BuildVisibility.shown});
+const DS_G = extend(GenericCrafter, "ds-g", {buildVisibility: BuildVisibility.shown});
+const DS_H = extend(GenericCrafter, "ds-h", {buildVisibility: BuildVisibility.shown});
+const DS_I = extend(GenericCrafter, "ds-i", {buildVisibility: BuildVisibility.shown});
+const DS_J = extend(GenericCrafter, "ds-j", {buildVisibility: BuildVisibility.shown});
+
+DS_F.requirements = ItemStack.with(dense_alloy, 25,  Items.metaglass, 25,  Items.titanium, 25,  Items.silicon, 25);
+DS_G.requirements = ItemStack.with(dense_alloy, 50,  Items.metaglass, 50,  Items.titanium, 50,  Items.silicon, 50);
+DS_H.requirements = ItemStack.with(dense_alloy, 100, Items.metaglass, 100, Items.titanium, 100, Items.silicon, 100);
+DS_I.requirements = ItemStack.with(dense_alloy, 150, Items.metaglass, 150, Items.titanium, 150, Items.silicon, 150);
+DS_J.requirements = ItemStack.with(dense_alloy, 300, Items.metaglass, 300, Items.titanium, 300, Items.silicon, 300);
+
+DS_F.outputItems = [new ItemStack(dense_alloy, 10)]; DS_F.outputLiquid = new LiquidStack(Liquids.slag, 0.4); DS_F.craftTime = 80;
+DS_G.outputItems = [new ItemStack(dense_alloy, 12)]; DS_G.outputLiquid = new LiquidStack(Liquids.slag, 0.5); DS_G.craftTime = 70; 
+DS_H.outputItems = [new ItemStack(dense_alloy, 14)]; DS_H.outputLiquid = new LiquidStack(Liquids.slag, 0.6); DS_H.craftTime = 60; 
+DS_I.outputItems = [new ItemStack(dense_alloy, 16)]; DS_I.outputLiquid = new LiquidStack(Liquids.slag, 0.7); DS_I.craftTime = 50; 
+DS_J.outputItems = [new ItemStack(dense_alloy, 18)]; DS_J.outputLiquid = new LiquidStack(Liquids.slag, 0.8); DS_J.craftTime = 40; 
+
+DS_F.itemCapacity = 40;  DS_F.liquidCapacity = 50;  DS_F.consumePower(16);
+DS_G.itemCapacity = 60;  DS_G.liquidCapacity = 75;  DS_G.consumePower(18);
+DS_H.itemCapacity = 80;  DS_H.liquidCapacity = 100; DS_H.consumePower(20);
+DS_I.itemCapacity = 100; DS_I.liquidCapacity = 125; DS_I.consumePower(22);
+DS_J.itemCapacity = 120; DS_J.liquidCapacity = 150; DS_J.consumePower(24);
+
+
