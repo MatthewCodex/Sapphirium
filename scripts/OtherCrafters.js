@@ -293,3 +293,38 @@ DS_I.itemCapacity = 100; DS_I.liquidCapacity = 125; DS_I.consumePower(22);
 DS_J.itemCapacity = 120; DS_J.liquidCapacity = 150; DS_J.consumePower(24);
 
 
+
+const DP_A = extend(AttributeCrafter, "dp-a", {buildVisibility: BuildVisibility.shown});
+const DP_B = extend(AttributeCrafter, "dp-b", {buildVisibility: BuildVisibility.shown});
+const DP_C = extend(AttributeCrafter, "dp-c", {buildVisibility: BuildVisibility.shown});
+const DP_D = extend(AttributeCrafter, "dp-d", {buildVisibility: BuildVisibility.shown});
+const DP_E = extend(AttributeCrafter, "dp-e", {buildVisibility: BuildVisibility.shown});
+
+DP_A.outputItems = [new ItemStack(diamond, 4)]; DP_A.craftTime = 160;
+DP_B.outputItems = [new ItemStack(diamond, 4)]; DP_B.craftTime = 150;
+DP_C.outputItems = [new ItemStack(diamond, 6)]; DP_C.craftTime = 140;
+DP_D.outputItems = [new ItemStack(diamond, 6)]; DP_D.craftTime = 130;
+DP_E.outputItems = [new ItemStack(diamond, 8)]; DP_E.craftTime = 120;
+
+DP_A.consumePower(6);  DP_A.itemCapacity = 40;  DP_A.liquidCapacity = 40;
+DP_B.consumePower(8);  DP_A.itemCapacity = 60;  DP_A.liquidCapacity = 60;
+DP_C.consumePower(10); DP_A.itemCapacity = 80;  DP_A.liquidCapacity = 80;
+DP_D.consumePower(12); DP_A.itemCapacity = 100; DP_A.liquidCapacity = 100;
+DP_E.consumePower(14); DP_A.itemCapacity = 120; DP_A.liquidCapacity = 120;
+
+DP_A.requirements = ItemStack.with(dense_alloy, 25,  Items.thorium, 25,  Items.plastanium, 25,  Items.silicon, 25);
+DP_B.requirements = ItemStack.with(dense_alloy, 50,  Items.thorium, 50,  Items.plastanium, 50,  Items.silicon, 50);
+DP_C.requirements = ItemStack.with(dense_alloy, 100, Items.thorium, 100, Items.plastanium, 100, Items.silicon, 100);
+DP_D.requirements = ItemStack.with(dense_alloy, 150, Items.thorium, 150, Items.plastanium, 150, Items.silicon, 150);
+DP_E.requirements = ItemStack.with(dense_alloy, 200, Items.thorium, 200, Items.plastanium, 200, Items.silicon, 200);
+
+
+
+const EMX_A = extend(GenericCrafter, "emx-a", {buildVisibility: BuildVisibility.shown});
+const EMX_B = extend(GenericCrafter, "emx-b", {buildVisibility: BuildVisibility.shown});
+const EMX_C = extend(GenericCrafter, "emx-c", {buildVisibility: BuildVisibility.shown});
+const EMX_D = extend(GenericCrafter, "emx-d", {buildVisibility: BuildVisibility.shown});
+const EMX_E = extend(GenericCrafter, "emx-e", {buildVisibility: BuildVisibility.shown});
+
+EMX_A.outputLiquids = [new LiquidStack(surge_mass, 0.4)]; EMX_A.consumePower(4);
+
