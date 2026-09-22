@@ -242,6 +242,16 @@ CMX_B.itemCapacity = 80;  CMX_B.liquidCapacity = 60;
 
 
 
+//const CRYO_A = extend(GenericCrafter, "cryo-a", {buildVisibility: BuildVisibility.shown});
+//const CRYO_B = extend(GenericCrafter, "cryo-b", {buildVisibility: BuildVisibility.shown});
+//const CRYO_C = extend(GenericCrafter, "cryo-c", {buildVisibility: BuildVisibility.shown});
+//const CRYO_D = extend(GenericCrafter, "cryo-d", {buildVisibility: BuildVisibility.shown});
+//const CRYO_E = extend(GenericCrafter, "cryo-e", {buildVisibility: BuildVisibility.shown});
+
+
+
+
+
 const DS_A = extend(GenericCrafter, "ds-a", {buildVisibility: BuildVisibility.shown});
 const DS_B = extend(GenericCrafter, "ds-b", {buildVisibility: BuildVisibility.shown});
 const DS_C = extend(GenericCrafter, "ds-c", {buildVisibility: BuildVisibility.shown});
@@ -326,9 +336,17 @@ const EMX_C = extend(GenericCrafter, "emx-c", {buildVisibility: BuildVisibility.
 const EMX_D = extend(GenericCrafter, "emx-d", {buildVisibility: BuildVisibility.shown});
 const EMX_E = extend(GenericCrafter, "emx-e", {buildVisibility: BuildVisibility.shown});
 
-EMX_A.outputLiquids = [new LiquidStack(surge_mass, 0.4)]; EMX_A.consumePower(4); EMX_A.consumePower(4); EMX_A.craftTime = 60;
+EMX_A.outputLiquids = [new LiquidStack(surge_mass, 0.4)]; EMX_A.consumePower(4);  EMX_A.consumePower(4); EMX_A.craftTime = 60;
+EMX_B.outputLiquids = [new LiquidStack(surge_mass, 0.5)]; EMX_B.consumePower(6);  EMX_B.consumePower(5); EMX_B.craftTime = 50;
+EMX_C.outputLiquids = [new LiquidStack(surge_mass, 0.6)]; EMX_C.consumePower(8);  EMX_C.consumePower(6); EMX_C.craftTime = 40;
+EMX_D.outputLiquids = [new LiquidStack(surge_mass, 0.7)]; EMX_D.consumePower(10); EMX_D.consumePower(7); EMX_D.craftTime = 30;
+EMX_E.outputLiquids = [new LiquidStack(surge_mass, 0.8)]; EMX_E.consumePower(12); EMX_E.consumePower(8); EMX_E.craftTime = 20;
 
-EMX_A.liquidCapacity = 40; EMX_A.requirements = ItemStack.with(dense_alloy, 25,  Items.titanium, 25,  Items.surgeAlloy, 25);
+EMX_A.liquidCapacity = 40;  EMX_A.requirements = ItemStack.with(dense_alloy, 25,  Items.titanium, 25,  Items.surgeAlloy, 25);
+EMX_B.liquidCapacity = 60;  EMX_B.requirements = ItemStack.with(dense_alloy, 50,  Items.titanium, 50,  Items.surgeAlloy, 50);
+EMX_C.liquidCapacity = 80;  EMX_C.requirements = ItemStack.with(dense_alloy, 100, Items.titanium, 100, Items.surgeAlloy, 100);
+EMX_D.liquidCapacity = 100; EMX_D.requirements = ItemStack.with(dense_alloy, 150, Items.titanium, 150, Items.surgeAlloy, 150);
+EMX_E.liquidCapacity = 120; EMX_E.requirements = ItemStack.with(dense_alloy, 200, Items.titanium, 200, Items.surgeAlloy, 200);
 
 
 
