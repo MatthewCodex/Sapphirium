@@ -326,5 +326,10 @@ const EMX_C = extend(GenericCrafter, "emx-c", {buildVisibility: BuildVisibility.
 const EMX_D = extend(GenericCrafter, "emx-d", {buildVisibility: BuildVisibility.shown});
 const EMX_E = extend(GenericCrafter, "emx-e", {buildVisibility: BuildVisibility.shown});
 
-EMX_A.outputLiquids = [new LiquidStack(surge_mass, 0.4)]; EMX_A.consumePower(4);
+EMX_A.outputLiquids = [new LiquidStack(surge_mass, 0.4)]; EMX_A.consumePower(4); EMX_A.consumePower(4); EMX_A.craftTime = 60;
+
+EMX_A.liquidCapacity = 40; EMX_A.requirements = ItemStack.with(dense_alloy, 25,  Items.titanium, 25,  Items.surgeAlloy, 25);
+
+
+
 
