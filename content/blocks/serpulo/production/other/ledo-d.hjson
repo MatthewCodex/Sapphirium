@@ -1,0 +1,48 @@
+
+attribute: water
+boostScale: 0.8
+category: crafting
+consumes: {
+
+liquid: ledonite-liquid/0.4
+items: {
+items: [
+ice-cube/1
+]
+}
+}
+
+
+drawer: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: ledonite-liquid
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: b8fffe70
+}
+{
+type: DrawParticles
+particles: 10
+particleLife: 100
+particleRad: 10
+particleSize: 4
+color: b8fffe
+alpha: 0.6
+}
+]
+
+size: 3
+
+shownPlanets: [serpulo]
+
+
+research: ledo-c

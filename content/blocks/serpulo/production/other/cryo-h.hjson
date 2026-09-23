@@ -1,0 +1,51 @@
+
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: "-bottom"
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: water
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: cryofluid
+        }
+        {
+            type: DrawRegion
+            suffix: "-top"
+        }
+        {
+            type: DrawDefault
+        }
+    ]
+}
+
+
+
+size: 4
+hasPower: true
+hasItems: true
+hasLiquids: true
+outputsLiquid: true
+consumes: {
+
+    liquid: water/1
+    items: {
+        items: [
+            ice-cube/10
+            titanium/8
+        ]
+    }
+}
+
+
+
+rotate: false
+solid: true
+category: crafting
+shownPlanets: [serpulo]
+research: cryo-g

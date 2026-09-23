@@ -242,13 +242,89 @@ CMX_B.itemCapacity = 80;  CMX_B.liquidCapacity = 60;
 
 
 
-//const CRYO_A = extend(GenericCrafter, "cryo-a", {buildVisibility: BuildVisibility.shown});
-//const CRYO_B = extend(GenericCrafter, "cryo-b", {buildVisibility: BuildVisibility.shown});
-//const CRYO_C = extend(GenericCrafter, "cryo-c", {buildVisibility: BuildVisibility.shown});
-//const CRYO_D = extend(GenericCrafter, "cryo-d", {buildVisibility: BuildVisibility.shown});
-//const CRYO_E = extend(GenericCrafter, "cryo-e", {buildVisibility: BuildVisibility.shown});
+const FZ_A = extend(AttributeCrafter, "fz-a", {buildVisibility: BuildVisibility.shown});
+const FZ_B = extend(AttributeCrafter, "fz-b", {buildVisibility: BuildVisibility.shown});
+const FZ_C = extend(AttributeCrafter, "fz-c", {buildVisibility: BuildVisibility.shown});
+const FZ_D = extend(AttributeCrafter, "fz-d", {buildVisibility: BuildVisibility.shown});
+const FZ_E = extend(AttributeCrafter, "fz-e", {buildVisibility: BuildVisibility.shown});
+
+FZ_A.consumePower(0.5);  FZ_A.requirements = ItemStack.with(dense_alloy, 10,  Items.metaglass, 10);  FZ_A.craftTime = 28;
+FZ_B.consumePower(0.6);  FZ_B.requirements = ItemStack.with(dense_alloy, 25,  Items.metaglass, 25);  FZ_B.craftTime = 26;
+FZ_C.consumePower(0.7);  FZ_C.requirements = ItemStack.with(dense_alloy, 50,  Items.metaglass, 50);  FZ_C.craftTime = 24;
+FZ_D.consumePower(0.8);  FZ_D.requirements = ItemStack.with(dense_alloy, 100, Items.metaglass, 100); FZ_D.craftTime = 22;
+FZ_E.consumePower(0.9);  FZ_E.requirements = ItemStack.with(dense_alloy, 200, Items.metaglass, 200); FZ_E.craftTime = 20;
+
+FZ_A.itemCapacity = 20;  FZ_A.liquidCapacity = 20;  FZ_A.outputItems = [new ItemStack(ice_cube, 2)];  
+FZ_B.itemCapacity = 30;  FZ_B.liquidCapacity = 30;  FZ_B.outputItems = [new ItemStack(ice_cube, 3)];  
+FZ_C.itemCapacity = 40;  FZ_C.liquidCapacity = 40;  FZ_C.outputItems = [new ItemStack(ice_cube, 4)];  
+FZ_D.itemCapacity = 50;  FZ_D.liquidCapacity = 50;  FZ_D.outputItems = [new ItemStack(ice_cube, 5)];  
+FZ_E.itemCapacity = 60;  FZ_E.liquidCapacity = 60;  FZ_E.outputItems = [new ItemStack(ice_cube, 6)];  
 
 
+
+const CRYO_A = extend(AttributeCrafter, "cryo-a", {buildVisibility: BuildVisibility.shown});
+const CRYO_B = extend(AttributeCrafter, "cryo-b", {buildVisibility: BuildVisibility.shown});
+const CRYO_C = extend(AttributeCrafter, "cryo-c", {buildVisibility: BuildVisibility.shown});
+const CRYO_D = extend(AttributeCrafter, "cryo-d", {buildVisibility: BuildVisibility.shown});
+const CRYO_E = extend(AttributeCrafter, "cryo-e", {buildVisibility: BuildVisibility.shown});
+
+CRYO_A.consumePower(0.5);  CRYO_A.requirements = ItemStack.with(dense_alloy, 10,  Items.metaglass, 10,  Items.titanium, 10);  CRYO_A.craftTime = 35;
+CRYO_B.consumePower(0.75); CRYO_B.requirements = ItemStack.with(dense_alloy, 25,  Items.metaglass, 25,  Items.titanium, 25);  CRYO_A.craftTime = 30;
+CRYO_C.consumePower(1.0);  CRYO_C.requirements = ItemStack.with(dense_alloy, 50,  Items.metaglass, 50,  Items.titanium, 50);  CRYO_A.craftTime = 25;
+CRYO_D.consumePower(1.25); CRYO_D.requirements = ItemStack.with(dense_alloy, 100, Items.metaglass, 100, Items.titanium, 100); CRYO_A.craftTime = 20;
+CRYO_E.consumePower(1.5);  CRYO_E.requirements = ItemStack.with(dense_alloy, 200, Items.metaglass, 200, Items.titanium, 200); CRYO_A.craftTime = 15;
+
+CRYO_A.itemCapacity = 20;  CRYO_A.liquidCapacity = 20;  CRYO_A.outputItems = [new ItemStack(cryo_cube, 2)];  
+CRYO_B.itemCapacity = 30;  CRYO_B.liquidCapacity = 30;  CRYO_B.outputItems = [new ItemStack(cryo_cube, 3)];  
+CRYO_C.itemCapacity = 40;  CRYO_C.liquidCapacity = 40;  CRYO_C.outputItems = [new ItemStack(cryo_cube, 4)];  
+CRYO_D.itemCapacity = 50;  CRYO_D.liquidCapacity = 50;  CRYO_D.outputItems = [new ItemStack(cryo_cube, 5)];  
+CRYO_E.itemCapacity = 60;  CRYO_E.liquidCapacity = 60;  CRYO_E.outputItems = [new ItemStack(cryo_cube, 6)];  
+
+
+
+const LEDO_A = extend(AttributeCrafter, "ledo-a", {buildVisibility: BuildVisibility.shown});
+const LEDO_B = extend(AttributeCrafter, "ledo-b", {buildVisibility: BuildVisibility.shown});
+const LEDO_C = extend(AttributeCrafter, "ledo-c", {buildVisibility: BuildVisibility.shown});
+const LEDO_D = extend(AttributeCrafter, "ledo-d", {buildVisibility: BuildVisibility.shown});
+const LEDO_E = extend(AttributeCrafter, "ledo-e", {buildVisibility: BuildVisibility.shown});
+
+LEDO_A.consumePower(1.0);  LEDO_A.requirements = ItemStack.with(dense_alloy, 50,  Items.metaglass, 50,  Items.titanium, 50);  LEDO_A.craftTime = 70;
+LEDO_B.consumePower(2.0);  LEDO_B.requirements = ItemStack.with(dense_alloy, 75,  Items.metaglass, 75,  Items.titanium, 75);  LEDO_B.craftTime = 60;
+LEDO_C.consumePower(3.0);  LEDO_C.requirements = ItemStack.with(dense_alloy, 100, Items.metaglass, 100, Items.titanium, 100); LEDO_C.craftTime = 50;
+LEDO_D.consumePower(4.0);  LEDO_D.requirements = ItemStack.with(dense_alloy, 150, Items.metaglass, 150, Items.titanium, 150); LEDO_D.craftTime = 40;
+LEDO_E.consumePower(5.0);  LEDO_E.requirements = ItemStack.with(dense_alloy, 300, Items.metaglass, 300, Items.titanium, 300); LEDO_E.craftTime = 30;
+
+LEDO_A.itemCapacity = 20;  LEDO_A.liquidCapacity = 20;  LEDO_A.outputItems = [new ItemStack(ledonite_cube, 2)];  
+LEDO_B.itemCapacity = 30;  LEDO_B.liquidCapacity = 30;  LEDO_B.outputItems = [new ItemStack(ledonite_cube, 3)];  
+LEDO_C.itemCapacity = 40;  LEDO_C.liquidCapacity = 40;  LEDO_C.outputItems = [new ItemStack(ledonite_cube, 4)];  
+LEDO_D.itemCapacity = 50;  LEDO_D.liquidCapacity = 50;  LEDO_D.outputItems = [new ItemStack(ledonite_cube, 5)];  
+LEDO_E.itemCapacity = 60;  LEDO_E.liquidCapacity = 60;  LEDO_E.outputItems = [new ItemStack(ledonite_cube, 6)];  
+
+
+
+const CRYO_F = extend(GenericCrafter, "cryo-f", {buildVisibility: BuildVisibility.shown});
+const CRYO_G = extend(GenericCrafter, "cryo-g", {buildVisibility: BuildVisibility.shown});
+const CRYO_H = extend(GenericCrafter, "cryo-h", {buildVisibility: BuildVisibility.shown});
+const CRYO_I = extend(GenericCrafter, "cryo-i", {buildVisibility: BuildVisibility.shown});
+const CRYO_J = extend(GenericCrafter, "cryo-j", {buildVisibility: BuildVisibility.shown});
+
+CRYO_F.requirements = ItemStack.with(dense_alloy, 50,  Items.graphite, 50,  globium, 50,  Items.silicon, 50,  Items.plastanium, 50);
+CRYO_G.requirements = ItemStack.with(dense_alloy, 100, Items.graphite, 100, globium, 100, Items.silicon, 100, Items.plastanium, 100);
+CRYO_H.requirements = ItemStack.with(dense_alloy, 200, Items.graphite, 200, globium, 200, Items.silicon, 200, Items.plastanium, 200);
+CRYO_I.requirements = ItemStack.with(dense_alloy, 300, Items.graphite, 300, globium, 300, Items.silicon, 300, Items.plastanium, 300);
+CRYO_J.requirements = ItemStack.with(dense_alloy, 450, Items.graphite, 450, globium, 450, Items.silicon, 450, Items.plastanium, 450);
+
+CRYO_F.outputLiquids = [new LiquidStack(Liquids.cryofluid, 1.2)]; CRYO_F.craftTime = 120;
+CRYO_G.outputLiquids = [new LiquidStack(Liquids.cryofluid, 1.4)]; CRYO_G.craftTime = 100;
+CRYO_H.outputLiquids = [new LiquidStack(Liquids.cryofluid, 1.6)]; CRYO_H.craftTime = 80;
+CRYO_I.outputLiquids = [new LiquidStack(Liquids.cryofluid, 1.8)]; CRYO_I.craftTime = 60;
+CRYO_J.outputLiquids = [new LiquidStack(Liquids.cryofluid, 2.0)]; CRYO_J.craftTime = 40;
+
+CRYO_F.consumePower(8);  DS_A.itemCapacity = 40;  CRYO_F.liquidCapacity = 140;
+CRYO_G.consumePower(9);  DS_A.itemCapacity = 50;  CRYO_G.liquidCapacity = 150;
+CRYO_H.consumePower(10); DS_A.itemCapacity = 60;  CRYO_H.liquidCapacity = 160;
+CRYO_I.consumePower(11); DS_A.itemCapacity = 70;  CRYO_I.liquidCapacity = 170;
+CRYO_J.consumePower(12); DS_A.itemCapacity = 80;  CRYO_J.liquidCapacity = 180;
 
 
 

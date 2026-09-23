@@ -1,0 +1,34 @@
+
+attribute: water
+boostScale: 0.8
+maxBoost: 1.5
+craftEffect: smeltsmoke
+category: crafting
+
+consumes: {
+
+liquid: water/0.1
+}
+
+
+
+drawer: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+}
+{
+type: DrawDefault
+}
+]
+
+shownPlanets: [serpulo]
+size: 2
+
+
+
+research: fz-b
