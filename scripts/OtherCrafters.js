@@ -320,11 +320,11 @@ CRYO_H.outputLiquids = [new LiquidStack(Liquids.cryofluid, 1.6)]; CRYO_H.craftTi
 CRYO_I.outputLiquids = [new LiquidStack(Liquids.cryofluid, 1.8)]; CRYO_I.craftTime = 60;
 CRYO_J.outputLiquids = [new LiquidStack(Liquids.cryofluid, 2.0)]; CRYO_J.craftTime = 40;
 
-CRYO_F.consumePower(8);  DS_A.itemCapacity = 40;  CRYO_F.liquidCapacity = 140;
-CRYO_G.consumePower(9);  DS_A.itemCapacity = 50;  CRYO_G.liquidCapacity = 150;
-CRYO_H.consumePower(10); DS_A.itemCapacity = 60;  CRYO_H.liquidCapacity = 160;
-CRYO_I.consumePower(11); DS_A.itemCapacity = 70;  CRYO_I.liquidCapacity = 170;
-CRYO_J.consumePower(12); DS_A.itemCapacity = 80;  CRYO_J.liquidCapacity = 180;
+CRYO_F.consumePower(8);  CRYO_F.itemCapacity = 40;  CRYO_F.liquidCapacity = 140;
+CRYO_G.consumePower(9);  CRYO_G.itemCapacity = 50;  CRYO_G.liquidCapacity = 150;
+CRYO_H.consumePower(10); CRYO_H.itemCapacity = 60;  CRYO_H.liquidCapacity = 160;
+CRYO_I.consumePower(11); CRYO_I.itemCapacity = 70;  CRYO_I.liquidCapacity = 170;
+CRYO_J.consumePower(12); CRYO_J.itemCapacity = 80;  CRYO_J.liquidCapacity = 180;
 
 
 
