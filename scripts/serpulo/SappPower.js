@@ -70,8 +70,7 @@ lightningBattery.buildType = () => extend(Battery.BatteryBuild, lightningBattery
                 damage, 
                 this.x, 
                 this.y, 
-                targetX, 
-                targetY, 
+                Mathf.random(0, 360), 
                 lightningLength
             );
         }
