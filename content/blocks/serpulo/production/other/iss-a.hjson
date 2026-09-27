@@ -1,0 +1,62 @@
+type: AttributeCrafter
+attribute: heat
+maxBoost: 1.5
+boostScale: 0.125
+size: 4
+
+
+
+craftEffect: {
+    type: ExplosionEffect
+    waveRad: 20
+    waveColor: f3e979
+    waveLife: 10
+    smokeRad: 30
+    smokeColor: f3e97970
+    smokes: 6
+    sparks: 6
+    sparkRad: 30
+    sparkStroke: 2
+    sparkLen: 3.5
+    sparkColor: f3e979
+    lifetime: 45
+}
+
+
+
+consumes: {
+    
+    
+    liquid: creotite/0.5
+    items: {
+        items: [
+            globium/13
+            silicon/6
+        ]
+    }
+}
+
+hasPower: true
+hasLiquids: true
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+        type: DrawRegion
+        suffix: -bottom
+        }
+        {
+        type: DrawArcSmelt
+        flameRad: 2
+        circleSpace: 3
+        circleStroke: 2
+        },
+        DrawDefault
+    ]
+}
+category: crafting
+shownPlanets: [serpulo]
+
+
+
+research: impulse-surge-smelter

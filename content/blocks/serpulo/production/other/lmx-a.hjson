@@ -1,0 +1,57 @@
+type: GenericCrafter
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: "-bottom"
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: cryofluid
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: ledonite-liquid
+        }
+        {
+            type: DrawDefault
+        }
+    ]
+}
+
+
+
+
+
+shownPlanets: [serpulo]
+
+
+
+
+
+size: 3
+hasPower: true
+hasItems: true
+hasLiquids: true
+outputsLiquid: true
+
+consumes: {
+
+    liquid: cryofluid/0.4
+    items: {
+        items: [
+            ice-cube/4
+            titanium/4
+        ]
+    }
+}
+
+
+
+
+
+rotate: false
+solid: true
+category: crafting
+research: ledonite-mixer

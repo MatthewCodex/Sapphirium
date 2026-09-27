@@ -1,0 +1,64 @@
+type: AttributeCrafter
+boostScale: 0.4
+maxBoost: 1.5
+
+updateEffect: {
+type: ExplosionEffect
+waveLife: 8
+waveRad: 5
+waveStroke: 1.8
+waveColor: f3e979
+sparks: 4
+sparkRad: 8
+sparkLen: 4
+sparkStroke: 2
+sparkColor: f3e979
+smokes: 0
+lifetime: 25
+}
+
+category: crafting
+shownPlanets: [serpulo]
+
+consumes: {
+
+  liquid: surge-mass/0.3
+  items: {
+    items: [
+      stone/1
+    ]
+  }
+}
+
+
+
+drawer: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawLiquidTile
+drawLiquid: surge-mass
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: f3e97970
+}
+{
+type: DrawArcSmelt
+drawCenter: false
+midColor: f3e979
+}
+]
+
+size: 3
+
+
+
+
+
+research: hypercharge-transformer

@@ -412,11 +412,11 @@ const EMX_C = extend(GenericCrafter, "emx-c", {buildVisibility: BuildVisibility.
 const EMX_D = extend(GenericCrafter, "emx-d", {buildVisibility: BuildVisibility.shown});
 const EMX_E = extend(GenericCrafter, "emx-e", {buildVisibility: BuildVisibility.shown});
 
-EMX_A.outputLiquids = [new LiquidStack(surge_mass, 0.4)]; EMX_A.consumePower(4);  EMX_A.consumePower(4); EMX_A.craftTime = 60;
-EMX_B.outputLiquids = [new LiquidStack(surge_mass, 0.5)]; EMX_B.consumePower(6);  EMX_B.consumePower(5); EMX_B.craftTime = 50;
-EMX_C.outputLiquids = [new LiquidStack(surge_mass, 0.6)]; EMX_C.consumePower(8);  EMX_C.consumePower(6); EMX_C.craftTime = 40;
-EMX_D.outputLiquids = [new LiquidStack(surge_mass, 0.7)]; EMX_D.consumePower(10); EMX_D.consumePower(7); EMX_D.craftTime = 30;
-EMX_E.outputLiquids = [new LiquidStack(surge_mass, 0.8)]; EMX_E.consumePower(12); EMX_E.consumePower(8); EMX_E.craftTime = 20;
+EMX_A.outputLiquids = [new LiquidStack(surge_mass, 0.4)]; EMX_A.consumePower(4); EMX_A.craftTime = 60;
+EMX_B.outputLiquids = [new LiquidStack(surge_mass, 0.5)]; EMX_B.consumePower(5); EMX_B.craftTime = 50;
+EMX_C.outputLiquids = [new LiquidStack(surge_mass, 0.6)]; EMX_C.consumePower(6); EMX_C.craftTime = 40;
+EMX_D.outputLiquids = [new LiquidStack(surge_mass, 0.7)]; EMX_D.consumePower(7); EMX_D.craftTime = 30;
+EMX_E.outputLiquids = [new LiquidStack(surge_mass, 0.8)]; EMX_E.consumePower(8); EMX_E.craftTime = 20;
 
 EMX_A.liquidCapacity = 40;  EMX_A.requirements = ItemStack.with(dense_alloy, 25,  Items.titanium, 25,  Items.surgeAlloy, 25);
 EMX_B.liquidCapacity = 60;  EMX_B.requirements = ItemStack.with(dense_alloy, 50,  Items.titanium, 50,  Items.surgeAlloy, 50);
@@ -426,4 +426,81 @@ EMX_E.liquidCapacity = 120; EMX_E.requirements = ItemStack.with(dense_alloy, 200
 
 
 
+const HCT_A = extend(AttributeCrafter, "hct-a", {buildVisibility: BuildVisibility.shown});
+const HCT_B = extend(AttributeCrafter, "hct-b", {buildVisibility: BuildVisibility.shown});
+const HCT_C = extend(AttributeCrafter, "hct-c", {buildVisibility: BuildVisibility.shown});
+const HCT_D = extend(AttributeCrafter, "hct-d", {buildVisibility: BuildVisibility.shown});
+const HCT_E = extend(AttributeCrafter, "hct-e", {buildVisibility: BuildVisibility.shown});
+
+HCT_A.consumePower(4.5); HCT_A.requirements = ItemStack.with(dense_alloy, 25,  Items.metaglass, 25,  Items.titanium, 25,  Items.thorium, 25);
+HCT_B.consumePower(6);   HCT_B.requirements = ItemStack.with(dense_alloy, 50,  Items.metaglass, 50,  Items.titanium, 50,  Items.thorium, 50);
+HCT_C.consumePower(7.5); HCT_C.requirements = ItemStack.with(dense_alloy, 75,  Items.metaglass, 75,  Items.titanium, 75,  Items.thorium, 75);
+HCT_D.consumePower(9);   HCT_D.requirements = ItemStack.with(dense_alloy, 100, Items.metaglass, 100, Items.titanium, 100, Items.thorium, 100);
+HCT_E.consumePower(12);  HCT_E.requirements = ItemStack.with(dense_alloy, 150, Items.metaglass, 150, Items.titanium, 150, Items.thorium, 150);
+
+HCT_A.liquidCapacity = 40;  HCT_A.itemCapacity = 20;  HCT_A.outputItems = [new ItemStack(surge_stone, 2)];  HCT_A.craftTime = 95;
+HCT_B.liquidCapacity = 60;  HCT_B.itemCapacity = 40;  HCT_B.outputItems = [new ItemStack(surge_stone, 3)];  HCT_B.craftTime = 90;
+HCT_C.liquidCapacity = 80;  HCT_C.itemCapacity = 60;  HCT_C.outputItems = [new ItemStack(surge_stone, 4)];  HCT_C.craftTime = 85;
+HCT_D.liquidCapacity = 100; HCT_D.itemCapacity = 80;  HCT_D.outputItems = [new ItemStack(surge_stone, 5)];  HCT_D.craftTime = 80;
+HCT_E.liquidCapacity = 120; HCT_E.itemCapacity = 100; HCT_E.outputItems = [new ItemStack(surge_stone, 6)];  HCT_E.craftTime = 75;
+
+
+
+const ISS_A = extend(AttributeCrafter, "iss-a", {buildVisibility: BuildVisibility.shown});
+const ISS_B = extend(AttributeCrafter, "iss-b", {buildVisibility: BuildVisibility.shown});
+const ISS_C = extend(AttributeCrafter, "iss-c", {buildVisibility: BuildVisibility.shown});
+const ISS_D = extend(AttributeCrafter, "iss-d", {buildVisibility: BuildVisibility.shown});
+const ISS_E = extend(AttributeCrafter, "iss-e", {buildVisibility: BuildVisibility.shown});
+
+ISS_A.craftTime = 110; ISS_A.outputItems = [new ItemStack(Items.surgeAlloy, 7)];  ISS_A.itemCapacity = 60;  ISS_A.liquidCapacity = 60;
+ISS_B.craftTime = 100; ISS_B.outputItems = [new ItemStack(Items.surgeAlloy, 8)];  ISS_B.itemCapacity = 80;  ISS_B.liquidCapacity = 80;
+ISS_C.craftTime = 90;  ISS_C.outputItems = [new ItemStack(Items.surgeAlloy, 9)];  ISS_C.itemCapacity = 100; ISS_C.liquidCapacity = 100;
+ISS_D.craftTime = 80;  ISS_D.outputItems = [new ItemStack(Items.surgeAlloy, 10)]; ISS_D.itemCapacity = 120; ISS_D.liquidCapacity = 120;
+ISS_E.craftTime = 60;  ISS_E.outputItems = [new ItemStack(Items.surgeAlloy, 12)]; ISS_E.itemCapacity = 140; ISS_E.liquidCapacity = 140;
+
+ISS_A.requirements = ItemStack.with(dense_alloy, 25,  globium, 25,  Items.silicon, 25,  Items.plastanium, 25);  ISS_A.consumePower(25);
+ISS_B.requirements = ItemStack.with(dense_alloy, 50,  globium, 50,  Items.silicon, 50,  Items.plastanium, 50);  ISS_B.consumePower(30);
+ISS_C.requirements = ItemStack.with(dense_alloy, 100, globium, 100, Items.silicon, 100, Items.plastanium, 100); ISS_C.consumePower(35);
+ISS_D.requirements = ItemStack.with(dense_alloy, 150, globium, 150, Items.silicon, 150, Items.plastanium, 150); ISS_D.consumePower(40);
+ISS_E.requirements = ItemStack.with(dense_alloy, 300, globium, 300, Items.silicon, 300, Items.plastanium, 300); ISS_E.consumePower(45);
+
+
+
+const SMS_A = extend(GenericCrafter, "sms-a", {buildVisibility: BuildVisibility.shown});
+const SMS_B = extend(GenericCrafter, "sms-b", {buildVisibility: BuildVisibility.shown});
+const SMS_C = extend(GenericCrafter, "sms-c", {buildVisibility: BuildVisibility.shown});
+const SMS_D = extend(GenericCrafter, "sms-d", {buildVisibility: BuildVisibility.shown});
+const SMS_E = extend(GenericCrafter, "sms-e", {buildVisibility: BuildVisibility.shown});
+
+SMS_A.outputLiquids = [new LiquidStack(surge_mass, 0.8)]; SMS_A.consumePower(20);  SMS_A.craftTime = 160;
+SMS_B.outputLiquids = [new LiquidStack(surge_mass, 0.9)]; SMS_B.consumePower(30);  SMS_B.craftTime = 140;
+SMS_C.outputLiquids = [new LiquidStack(surge_mass, 1)];   SMS_C.consumePower(40);  SMS_C.craftTime = 120;
+SMS_D.outputLiquids = [new LiquidStack(surge_mass, 1.1)]; SMS_D.consumePower(50);  SMS_D.craftTime = 100;
+SMS_E.outputLiquids = [new LiquidStack(surge_mass, 1.2)]; SMS_E.consumePower(60);  SMS_E.craftTime = 80;
+
+SMS_A.liquidCapacity = 100; SMS_A.itemCapacity = 25;  SMS_A.requirements = ItemStack.with(dense_alloy, 25,  Items.thorium, 25,  Items.silicon, 25,  Items.surgeAlloy, 25);
+SMS_B.liquidCapacity = 120; SMS_B.itemCapacity = 50;  SMS_B.requirements = ItemStack.with(dense_alloy, 50,  Items.thorium, 25,  Items.silicon, 25,  Items.surgeAlloy, 25);
+SMS_C.liquidCapacity = 140; SMS_C.itemCapacity = 75;  SMS_C.requirements = ItemStack.with(dense_alloy, 100, Items.thorium, 100, Items.silicon, 100, Items.surgeAlloy, 100);
+SMS_D.liquidCapacity = 160; SMS_D.itemCapacity = 100; SMS_D.requirements = ItemStack.with(dense_alloy, 150, Items.thorium, 150, Items.silicon, 150, Items.surgeAlloy, 150);
+SMS_E.liquidCapacity = 180; SMS_E.itemCapacity = 150; SMS_E.requirements = ItemStack.with(dense_alloy, 250, Items.thorium, 250, Items.silicon, 250, Items.surgeAlloy, 250);
+
+
+
+const LMX_A = extend(GenericCrafter, "lmx-a", {buildVisibility: BuildVisibility.shown});
+const LMX_B = extend(GenericCrafter, "lmx-b", {buildVisibility: BuildVisibility.shown});
+const LMX_C = extend(GenericCrafter, "lmx-c", {buildVisibility: BuildVisibility.shown});
+const LMX_D = extend(GenericCrafter, "lmx-d", {buildVisibility: BuildVisibility.shown});
+const LMX_E = extend(GenericCrafter, "lmx-e", {buildVisibility: BuildVisibility.shown});
+
+LMX_A.requirements = ItemStack.with(dense_alloy, 25,  globium, 25,  Items.titanium, 25,  Items.silicon, 25);  LMX_A.outputLiquids = [new LiquidStack(ledonite, 0.6)]; 
+LMX_B.requirements = ItemStack.with(dense_alloy, 50,  globium, 50,  Items.titanium, 50,  Items.silicon, 50);  LMX_B.outputLiquids = [new LiquidStack(ledonite, 0.7)]; 
+LMX_C.requirements = ItemStack.with(dense_alloy, 75,  globium, 75,  Items.titanium, 75,  Items.silicon, 75);  LMX_C.outputLiquids = [new LiquidStack(ledonite, 0.8)]; 
+LMX_D.requirements = ItemStack.with(dense_alloy, 100, globium, 100, Items.titanium, 100, Items.silicon, 100); LMX_D.outputLiquids = [new LiquidStack(ledonite, 0.9)]; 
+LMX_E.requirements = ItemStack.with(dense_alloy, 150, globium, 150, Items.titanium, 150, Items.silicon, 150); LMX_E.outputLiquids = [new LiquidStack(ledonite, 1)]; 
+
+LMX_A.craftTime = 100; LMX_A.consumePower(6);  LMX_A.itemCapacity = 20; LMX_A.liquidCapacity = 60;
+LMX_B.craftTime = 90;  LMX_B.consumePower(7);  LMX_B.itemCapacity = 30; LMX_B.liquidCapacity = 80;
+LMX_C.craftTime = 80;  LMX_C.consumePower(8);  LMX_C.itemCapacity = 40; LMX_C.liquidCapacity = 100;
+LMX_D.craftTime = 70;  LMX_D.consumePower(9);  LMX_D.itemCapacity = 50; LMX_D.liquidCapacity = 120;
+LMX_E.craftTime = 60;  LMX_E.consumePower(10); LMX_E.itemCapacity = 60; LMX_E.liquidCapacity = 140;
 
