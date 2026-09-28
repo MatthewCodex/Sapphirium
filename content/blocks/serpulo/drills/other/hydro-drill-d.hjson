@@ -22,6 +22,14 @@ requirements: [
     dense-alloy/100
 ]
 
-
+consumes: {
+    liquid: {
+        liquid: water
+        amount: 0.5
+        booster: true
+        optional: true
+        update: true
+    }
+}
 
 research: hydro-drill-c
