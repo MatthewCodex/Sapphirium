@@ -41,3 +41,5 @@ requirements: [
 research: {
     parent: plastanium-compressor
 }
+
+conductivePower: true

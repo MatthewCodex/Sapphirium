@@ -92,6 +92,9 @@ consumes: {
     }
     liquid: surge-mass/0.766666667
 }
+
+conductivePower: true
+
 research: {
     parent: impact-reactor
 }

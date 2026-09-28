@@ -53,3 +53,5 @@ research: {
     parent: cryofluid-megamixer
     objectives: [freezer]
 }
+
+conductivePower: true

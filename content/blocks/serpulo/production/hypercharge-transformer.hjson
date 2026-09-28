@@ -64,3 +64,5 @@ research: {
     parent: freezer
     objectives: [electromixer]
 }
+
+conductivePower: true

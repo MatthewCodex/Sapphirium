@@ -65,3 +65,4 @@ rotate: false
 solid: true
 category: crafting
 research: cmm-b
+conductivePower: true

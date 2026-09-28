@@ -21,6 +21,8 @@ drawer: {
         ]
 }
 
+conductivePower: true
+
 consumes: {
     items: {
         items: [

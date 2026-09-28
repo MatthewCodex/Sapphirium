@@ -10,3 +10,4 @@ research: {
 emitLight: true
 lightRadius: 85
 envDisabled: 16
+conductivePower: true

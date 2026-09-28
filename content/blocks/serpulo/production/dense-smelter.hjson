@@ -30,3 +30,5 @@ consumes: {
 }
 research: graphite-press
 shownPlanets: [serpulo]
+
+conductivePower: true

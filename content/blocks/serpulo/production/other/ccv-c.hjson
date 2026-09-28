@@ -57,3 +57,4 @@ research: ccv-b
 attribute: heat
 boostScale: 0.15
 shownPlanets: [serpulo]
+conductivePower: true

@@ -31,5 +31,6 @@ consumes: {
         update: true
     }
 }
+conductivePower: true
 
 research: hydro-drill-b

@@ -23,3 +23,4 @@ hasLiquids: false
 shownPlanets: [serpulo]
 
 research: bbm-a
+conductivePower: true

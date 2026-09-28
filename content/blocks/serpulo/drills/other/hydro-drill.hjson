@@ -33,5 +33,6 @@ consumes: {
         update: true
     }
 }
+conductivePower: true
 
 research: smalldrill

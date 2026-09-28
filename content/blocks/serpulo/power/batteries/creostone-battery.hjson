@@ -2,6 +2,9 @@ health: 575
 consumes: {
     powerBuffered: 180000
 }
+
+conductivePower: true
+
 size: 2
 fullLightColor: bd5553ff
 emptyLightColor: 3b3b45

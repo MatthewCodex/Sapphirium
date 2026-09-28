@@ -46,3 +46,5 @@ research: {
     parent: freezer
     objectives: [melter]
 }
+
+conductivePower: true

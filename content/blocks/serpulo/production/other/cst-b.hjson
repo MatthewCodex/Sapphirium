@@ -9,3 +9,4 @@ drawer: {
 craftEffect: redgeneratespark
 research: cst-a
 shownPlanets: [serpulo]
+conductivePower: true

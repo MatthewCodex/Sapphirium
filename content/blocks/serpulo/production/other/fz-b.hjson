@@ -29,6 +29,7 @@ type: DrawDefault
 shownPlanets: [serpulo]
 size: 2
 
+conductivePower: true
 
 
 research: fz-a

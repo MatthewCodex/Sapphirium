@@ -38,6 +38,9 @@ consumes: {
         ]
     }
 }
+
+conductivePower: true
+
 requirements: [
     dense-alloy/80
     titanium/80

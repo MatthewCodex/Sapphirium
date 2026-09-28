@@ -60,3 +60,5 @@ research: {
         rotary-pump
     ]
 }
+
+conductivePower: true

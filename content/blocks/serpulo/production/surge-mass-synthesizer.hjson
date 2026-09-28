@@ -47,3 +47,5 @@ research: {
     parent: electromixer
     objectives: [impulse-surge-smelter]
 }
+
+conductivePower: true

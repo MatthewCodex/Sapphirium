@@ -46,3 +46,4 @@ rotate: false
 solid: true
 category: crafting
 research: cmx-b
+conductivePower: true

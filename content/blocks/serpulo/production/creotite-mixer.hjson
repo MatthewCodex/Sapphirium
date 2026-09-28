@@ -47,6 +47,9 @@ consumes: {
         ]
     }
 }
+
+conductivePower: true
+
 itemCapacity: 10
 liquidCapacity: 36
 rotate: false

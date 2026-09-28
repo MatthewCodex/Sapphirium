@@ -39,5 +39,8 @@ requirements: [
 consumes: {
     power: 2.5
 }
+
+conductivePower: true
+
 shownPlanets: [serpulo]
 research: water-extractor

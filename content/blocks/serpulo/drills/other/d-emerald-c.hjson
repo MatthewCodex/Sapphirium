@@ -2,3 +2,4 @@ research: d-emerald-b
 description: Produces emeralds.
 hasItems: true
 shownPlanets: [serpulo , erekir]
+conductivePower: true

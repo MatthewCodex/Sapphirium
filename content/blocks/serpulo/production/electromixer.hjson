@@ -49,3 +49,6 @@ research: {
     parent: cryofluid-mixer
     objectives: [surge-smelter]
 }
+
+conductivePower: true
+

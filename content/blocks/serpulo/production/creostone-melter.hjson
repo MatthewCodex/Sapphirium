@@ -41,6 +41,9 @@ consumes: {
         ]
     }
 }
+
+conductivePower: true
+
 drawer: [
     {
         type: DrawRegion

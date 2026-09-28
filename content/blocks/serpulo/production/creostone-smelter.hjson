@@ -21,6 +21,9 @@ consumes: {
         ]
     }
 }
+
+conductivePower: true
+
 craftEffect: redgeneratespark
 research: {
     parent: dense-smelter

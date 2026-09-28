@@ -54,3 +54,4 @@ drawer: [
 ]
 shownPlanets: [serpulo]
 research: cmt-d
+conductivePower: true

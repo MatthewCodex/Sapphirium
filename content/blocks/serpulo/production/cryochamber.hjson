@@ -18,6 +18,9 @@ consumes: {
 power: 0.4
 liquid: cryofluid/0.1
 }
+
+conductivePower: true
+
 requirements: [
     dense-alloy/30
     metaglass/30

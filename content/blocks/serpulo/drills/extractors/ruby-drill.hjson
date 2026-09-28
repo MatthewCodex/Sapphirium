@@ -28,6 +28,9 @@ consumes: {
         ]
     }
 }
+
+conductivePower: true
+
 liquidCapacity: 24
 craftEffect: {
     type: MultiEffect

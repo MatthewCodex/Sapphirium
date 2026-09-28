@@ -50,3 +50,4 @@ category: crafting
 research: dp-d
 shownPlanets: [serpulo]
 
+conductivePower: true

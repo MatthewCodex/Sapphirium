@@ -11,3 +11,4 @@ shownPlanets: [serpulo]
 research: {
     parent: solar-panel-large
 }
+conductivePower: true

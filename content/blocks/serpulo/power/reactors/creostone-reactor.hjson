@@ -118,6 +118,8 @@ consumes: {
   }
 }
 
+conductivePower: true
+
 research: {
 parent: thorium-reactor
 objectives: [ledonite-mixer]

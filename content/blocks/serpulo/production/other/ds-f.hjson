@@ -42,3 +42,4 @@ consumes: {
 }
 research: big-dense-smelter
 shownPlanets: [serpulo]
+conductivePower: true

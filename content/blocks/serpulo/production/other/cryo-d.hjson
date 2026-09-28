@@ -46,3 +46,4 @@ size: 2
 
 shownPlanets: [serpulo]
 research: cryo-c
+conductivePower: true

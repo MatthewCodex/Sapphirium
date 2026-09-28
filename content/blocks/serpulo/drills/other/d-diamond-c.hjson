@@ -2,3 +2,4 @@ research: d-diamond-b
 description: Produces creostone.
 hasItems: true
 shownPlanets: [serpulo , erekir]
+conductivePower: true

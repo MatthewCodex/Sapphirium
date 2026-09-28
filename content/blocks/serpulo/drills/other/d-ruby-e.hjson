@@ -2,3 +2,4 @@ research: d-ruby-d
 description: Produces rubies.
 hasItems: true
 shownPlanets: [serpulo , erekir]
+conductivePower: true

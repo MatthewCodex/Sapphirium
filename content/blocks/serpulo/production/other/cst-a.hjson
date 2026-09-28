@@ -9,3 +9,4 @@ drawer: {
 craftEffect: redgeneratespark
 research: creostone-smelter
 shownPlanets: [serpulo]
+conductivePower: true

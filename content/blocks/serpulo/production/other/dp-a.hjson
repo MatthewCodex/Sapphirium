@@ -50,3 +50,4 @@ category: crafting
 research: diamond-press
 shownPlanets: [serpulo]
 
+conductivePower: true

@@ -2,3 +2,4 @@ research: d-stone-c
 description: Produces stone.
 hasItems: true
 shownPlanets: [serpulo , erekir]
+conductivePower: true

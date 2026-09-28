@@ -11,6 +11,9 @@ consumes: {
         ]
     }
 }
+
+conductivePower: true
+
 attribute: water
 boostScale: 0.15
 craftEffect: {

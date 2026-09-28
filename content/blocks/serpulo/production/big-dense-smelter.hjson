@@ -50,6 +50,9 @@ consumes: {
         ]
     }
 }
+
+conductivePower: true
+
 research: {
     parent: dense-smelter
     objectives: [

@@ -60,3 +60,4 @@ requirements: [
     dense-alloy/35
     graphite/25
 ]
+conductivePower: true

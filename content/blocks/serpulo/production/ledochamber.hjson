@@ -53,3 +53,5 @@ research: {
     parent: freezer
     objectives: [ledonite-mixer]
 }
+
+conductivePower: true

@@ -9,3 +9,4 @@ requirements: [
 ]
 envDisabled: 16
 group: walls
+conductivePower: true

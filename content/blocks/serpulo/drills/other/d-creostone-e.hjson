@@ -2,3 +2,4 @@ research: d-creostone-d
 description: Produces creostone.
 hasItems: true
 shownPlanets: [serpulo , erekir]
+conductivePower: true

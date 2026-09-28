@@ -11,3 +11,4 @@ requirements: [
 category: power
 research: solar-panel
 shownPlanets: [serpulo]
+conductivePower: true

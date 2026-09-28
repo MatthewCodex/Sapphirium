@@ -49,3 +49,4 @@ solid: true
 category: crafting
 shownPlanets: [serpulo]
 research: cryofluid-megamixer
+conductivePower: true

@@ -57,3 +57,4 @@ research: {
     objectives: [ledonite-mixer, tinorium-crystallizer]
 }
 
+conductivePower: true

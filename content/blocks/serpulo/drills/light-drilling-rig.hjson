@@ -37,3 +37,5 @@ research: {
     parent: lightning-drill
     objectives: [impulse-surge-smelter]
 }
+
+conductivePower: true

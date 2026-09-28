@@ -25,3 +25,4 @@ consumes: {
 }
 research: ds-b
 shownPlanets: [serpulo]
+conductivePower: true

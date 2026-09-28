@@ -41,3 +41,4 @@ category: crafting
 
 shownPlanets: [serpulo]
 research: emx-d
+conductivePower: true

@@ -19,3 +19,4 @@ shownPlanets: [serpulo]
 research: {
     parent: power-node-large
 }
+conductivePower: true

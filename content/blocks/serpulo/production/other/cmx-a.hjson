@@ -46,3 +46,4 @@ rotate: false
 solid: true
 category: crafting
 research: creotite-mixer
+conductivePower: true

@@ -49,3 +49,4 @@ solid: true
 category: crafting
 shownPlanets: [serpulo]
 research: cryo-g
+conductivePower: true

@@ -44,5 +44,6 @@ size: 3
 
 shownPlanets: [serpulo]
 
+conductivePower: true
 
 research: ledochamber

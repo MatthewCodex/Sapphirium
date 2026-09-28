@@ -21,3 +21,4 @@ requirements: [
     charged-stick/30
 ]
 shownPlanets: [serpulo]
+conductivePower: true

@@ -12,3 +12,4 @@ requirements: [
 category: power
 buildVisibility: sandboxOnly
 shownPlanets: [serpulo]
+conductivePower: true

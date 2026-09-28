@@ -49,6 +49,7 @@ liquidCapacity: 84
 
 category: crafting
 shownPlanets: [serpulo]
+conductivePower: true
 
 
 
