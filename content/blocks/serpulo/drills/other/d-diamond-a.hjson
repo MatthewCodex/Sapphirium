@@ -1,0 +1,4 @@
+research: lightning-drill
+description: Produces creostone.
+hasItems: true
+shownPlanets: [serpulo , erekir]

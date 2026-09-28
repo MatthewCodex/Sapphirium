@@ -1,0 +1,27 @@
+
+category: production
+
+size: 2
+hasPower: true
+
+
+
+tier: 3
+
+
+
+drillEffect: mineHuge
+
+drawRim: true
+shownPlanets: [serpulo]
+requirements: [
+    copper/100
+    lead/100
+    metaglass/100
+    silicon/100
+    dense-alloy/100
+]
+
+
+
+research: hydro-drill-c

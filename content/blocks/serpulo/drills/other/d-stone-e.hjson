@@ -1,0 +1,4 @@
+research: d-stone-d
+description: Produces stone.
+hasItems: true
+shownPlanets: [serpulo , erekir]
