@@ -28,13 +28,13 @@ const surge_mass = Vars.content.getByName(ContentType.liquid, "sapphirium-surge-
 
 
 
-const hydro = extend(GenericCrafter, "hydro-drill", {buildVisibility: BuildVisibility.shown});
+const hydro = extend(Drill, "hydro-drill", {buildVisibility: BuildVisibility.shown});
 
-const hydro_a = extend(GenericCrafter, "hydro-drill-a", {buildVisibility: BuildVisibility.shown});
-const hydro_b = extend(GenericCrafter, "hydro-drill-b", {buildVisibility: BuildVisibility.shown});
-const hydro_c = extend(GenericCrafter, "hydro-drill-c", {buildVisibility: BuildVisibility.shown});
-const hydro_d = extend(GenericCrafter, "hydro-drill-d", {buildVisibility: BuildVisibility.shown});
-const hydro_e = extend(GenericCrafter, "hydro-drill-e", {buildVisibility: BuildVisibility.shown});
+const hydro_a = extend(Drill, "hydro-drill-a", {buildVisibility: BuildVisibility.shown});
+const hydro_b = extend(Drill, "hydro-drill-b", {buildVisibility: BuildVisibility.shown});
+const hydro_c = extend(Drill, "hydro-drill-c", {buildVisibility: BuildVisibility.shown});
+const hydro_d = extend(Drill, "hydro-drill-d", {buildVisibility: BuildVisibility.shown});
+const hydro_e = extend(Drill, "hydro-drill-e", {buildVisibility: BuildVisibility.shown});
 
 hydro_a.itemCapacity = 120; hydro_a.drillTime = 90;  hydro_a.liquidBoostIntensity = 2.0;  hydro_a.liquidCapacity = 120;
 hydro_b.itemCapacity = 140; hydro_b.drillTime = 75;  hydro_b.liquidBoostIntensity = 2.5;  hydro_b.liquidCapacity = 140;
@@ -194,17 +194,17 @@ D_RUBY_E.itemCapacity = 100; D_RUBY_E.craftTime = 10;  D_RUBY_E.category = Categ
 
 
 
-const D_STONE_A = extend(GenericCrafter, "d-ruby-a", {buildVisibility: BuildVisibility.shown});
-const D_STONE_B = extend(GenericCrafter, "d-ruby-b", {buildVisibility: BuildVisibility.shown});
-const D_STONE_C = extend(GenericCrafter, "d-ruby-c", {buildVisibility: BuildVisibility.shown});
-const D_STONE_D = extend(GenericCrafter, "d-ruby-d", {buildVisibility: BuildVisibility.shown});
-const D_STONE_E = extend(GenericCrafter, "d-ruby-e", {buildVisibility: BuildVisibility.shown});
+const D_STONE_A = extend(GenericCrafter, "d-stone-a", {buildVisibility: BuildVisibility.shown});
+const D_STONE_B = extend(GenericCrafter, "d-stone-b", {buildVisibility: BuildVisibility.shown});
+const D_STONE_C = extend(GenericCrafter, "d-stone-c", {buildVisibility: BuildVisibility.shown});
+const D_STONE_D = extend(GenericCrafter, "d-stone-d", {buildVisibility: BuildVisibility.shown});
+const D_STONE_E = extend(GenericCrafter, "d-stone-e", {buildVisibility: BuildVisibility.shown});
 
-D_STONE_A.size = 1;  D_STONE_A.localizedName = "T1 Ruby Drill";  D_STONE_A.outputItems = [new ItemStack(ruby, 1)];
-D_STONE_B.size = 2;  D_STONE_B.localizedName = "T2 Ruby Drill";  D_STONE_B.outputItems = [new ItemStack(ruby, 1)];
-D_STONE_C.size = 3;  D_STONE_C.localizedName = "T3 Ruby Drill";  D_STONE_C.outputItems = [new ItemStack(ruby, 2)];
-D_STONE_D.size = 4;  D_STONE_D.localizedName = "T4 Ruby Drill";  D_STONE_D.outputItems = [new ItemStack(ruby, 2)];
-D_STONE_E.size = 5;  D_STONE_E.localizedName = "T5 Ruby Drill";  D_STONE_E.outputItems = [new ItemStack(ruby, 3)];
+D_STONE_A.size = 1;  D_STONE_A.localizedName = "T1 Stone Drill";  D_STONE_A.outputItems = [new ItemStack(ruby, 1)];
+D_STONE_B.size = 2;  D_STONE_B.localizedName = "T2 Stone Drill";  D_STONE_B.outputItems = [new ItemStack(ruby, 1)];
+D_STONE_C.size = 3;  D_STONE_C.localizedName = "T3 Stone Drill";  D_STONE_C.outputItems = [new ItemStack(ruby, 2)];
+D_STONE_D.size = 4;  D_STONE_D.localizedName = "T4 Stone Drill";  D_STONE_D.outputItems = [new ItemStack(ruby, 2)];
+D_STONE_E.size = 5;  D_STONE_E.localizedName = "T5 Stone Drill";  D_STONE_E.outputItems = [new ItemStack(ruby, 3)];
 
 D_STONE_A.requirements = ItemStack.with(Items.copper, 10,  Items.lead, 10);
 D_STONE_B.requirements = ItemStack.with(Items.copper, 25,  Items.lead, 25,  ruby, 25);
