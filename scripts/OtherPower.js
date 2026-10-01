@@ -36,4 +36,4 @@ const HG_A = extend(ThermalGenerator, "hg-a", {buildVisibility: BuildVisibility.
 
 HG_A.requirements = ItemStack.with(dense_alloy, 10,  Items.metaglass, 10, Items.titanium, 10, Items.silicon, 10);
 
-HG_A.powerProduction = 0.8;
+HG_A..consumePower(-0.8,0,true);
