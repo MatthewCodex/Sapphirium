@@ -36,7 +36,7 @@ require("SappWeathers");
 
 require("OtherDrills");
 require("OtherCrafters");
-require("OtherPower")
+require("OtherPower");
 
 
 
