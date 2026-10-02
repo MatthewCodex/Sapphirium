@@ -40,8 +40,8 @@ HG_C.requirements = ItemStack.with(dense_alloy, 50,  Items.metaglass, 50,  Items
 HG_D.requirements = ItemStack.with(dense_alloy, 75,  Items.metaglass, 75,  Items.titanium, 75,  Items.silicon, 75);
 HG_E.requirements = ItemStack.with(dense_alloy, 100, Items.metaglass, 100, Items.titanium, 100, Items.silicon, 100);
 
-HG_A.consumePower(-0.8, 20,  true);
-HG_B.consumePower(-1.6, 40,  true);
-HG_C.consumePower(-2.4, 60,  true);
-HG_D.consumePower(-3.2, 80,  true);
-HG_E.consumePower(-4,   100, true);
+HG_A.consumePower(-0.8, 0,  true);
+HG_B.consumePower(-1.6, 0,  true);
+HG_C.consumePower(-2.4, 0,  true);
+HG_D.consumePower(-3.2, 0,  true);
+HG_E.consumePower(-4,   0, true);
