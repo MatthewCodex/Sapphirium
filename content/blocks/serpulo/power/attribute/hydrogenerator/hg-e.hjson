@@ -1,0 +1,29 @@
+
+category: power
+research: hg-d
+
+
+
+
+
+
+
+effectChance: 0.011
+generateEffect: {
+type: ParticleEffect
+particles: 1
+lifetime: 60
+sizeFrom: 4
+sizeTo: 0
+length: 20
+colorFrom: 7191eb90
+colorTo: 7191eb70
+}
+
+
+
+size: 2
+ambientSound: loopHum
+ambientSoundVolume: 0.06
+attribute: water
+shownPlanets: [serpulo]
